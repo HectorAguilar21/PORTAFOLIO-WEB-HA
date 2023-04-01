@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title-name,
+.title-container {
+  font-family: "Sofia Sans Condensed", sans-serif;
+}
+
+.title-project {
+  font-family: "Alkatra", sans-serif;
+}
+
+.title-buttons,
+.title-technology,
+.title-section,
+.title-nav,
+.parragraph-section,
+.form-text {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.title-stack,
+.title-form {
+  font-family: "Pattaya", sans-serif;
+}
+
+.container-personal {
+  background-image: url("/src/assets/img/Fotos_Info/Familia.jpg");
+}
+
+.container-hobbies {
+  background-image: url("/src/assets/img/Fotos_Info/Hobbies.jpg");
+}
+
+.contact-page-background {
+  background-image: url("/src/assets/img/BackGround/Meteor.svg");
+}
+
+.technology-page-background {
+  background-image: url("/src/assets/img/BackGround/Meteor2.svg");
+}
+/* .title-project {
+  font-family: "Playfair Display", serif;
+} */
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+  background: rgb(14, 116, 144);
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(67, 56, 202);
+  -webkit-border-radius: 1ex;
+}
+
+::-webkit-scrollbar-corner {
+  background: #fff3;
+}
