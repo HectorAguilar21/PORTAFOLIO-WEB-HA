@@ -19,7 +19,13 @@ export default function ProjectsPage() {
       )
         .sort((a, b) => b.id - a.id)
         .map((project, index) => (
-          <ContainerProjects project={project} key={index} />
+          <div
+            className={`w-full h-full overflow-auto flex items-center bg-cover bg-no-repeat ${
+              project.id % 2 !== 0 ? "background-indigo" : "background-cyan"
+            }`}
+          >
+            <ContainerProjects project={project} key={index} />
+          </div>
           // <motion.div
           //   key={index}
           //   className={`h-screen w-screen flex justify-center items-center overflow-scroll my-auto ${

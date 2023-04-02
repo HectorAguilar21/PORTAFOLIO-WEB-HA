@@ -33,11 +33,11 @@
   background-image: url("/src/assets/img/Fotos_Info/Hobbies.jpg");
 }
 
-.contact-page-background {
+.background-indigo {
   background-image: url("/src/assets/img/BackGround/Meteor.svg");
 }
 
-.technology-page-background {
+.background-cyan {
   background-image: url("/src/assets/img/BackGround/Meteor2.svg");
 }
 /* .title-project {

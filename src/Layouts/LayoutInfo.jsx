@@ -16,13 +16,13 @@ export default function LayoutInfo() {
       bgColor = "bg-indigo-700";
       break;
     case "/page/stack":
-      bgColor = "technology-page-background";
+      bgColor = "background-cyan";
       break;
     case "/page/projects":
       bgColor = "bg-indigo-700";
       break;
     case "/page/contact":
-      bgColor = "contact-page-background";
+      bgColor = "background-indigo";
       break;
     default:
       break;

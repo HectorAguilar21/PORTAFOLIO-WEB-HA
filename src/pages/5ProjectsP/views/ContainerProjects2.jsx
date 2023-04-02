@@ -3,6 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import Images from "../../1Reusable components/Images";
 import { FrontendList, BackendList } from "../../data/Data";
+import TechFrontendProject from "../components/TechFrontendProject";
+import TechBackendProject from "../components/TechBackendProject";
 
 export default function ContainerProjects2({ project }) {
   const location = useLocation();
@@ -60,79 +62,10 @@ export default function ContainerProjects2({ project }) {
               {project.description}
             </p>
             {project.techF !== "" && (
-              <>
-                <h5 className="tech-title text-center text-3xl font-bold py-10">
-                  Front-end:
-                </h5>
-                <div className="flex justify-evenly">
-                  {project.techF.map((tech) => {
-                    const frontendTech = FrontendList.find(
-                      (item) => item.title === tech.title
-                    );
-                    return (
-                      frontendTech && (
-                        <div
-                          className={`flex items-center border-b-8 ${
-                            project.id % 2 === 0
-                              ? "border-cyan-500"
-                              : "border-indigo-500"
-                          }  pb-2`}
-                        >
-                          <Images
-                            className={`h-20 border-b-8 ${
-                              project.id % 2 === 0
-                                ? "border-cyan-500"
-                                : "border-indigo-500"
-                            }  pb-2`}
-                            item={frontendTech}
-                            tech={tech}
-                            title={frontendTech.title}
-                            pathName={pathName}
-                          />
-                        </div>
-                      )
-                    );
-                  })}
-                </div>
-              </>
+              <TechFrontendProject project={project} pathName={pathName} />
             )}
             {project.techB !== "" && (
-              <>
-                <h5 className="tech-title text-center text-3xl font-bold py-10">
-                  Back-end:
-                </h5>
-                <div className="flex justify-evenly">
-                  {project.techB.map((tech) => {
-                    const backendTech = BackendList.find(
-                      (item) => item.title === tech.title
-                    );
-
-                    return (
-                      backendTech && (
-                        <div
-                          className={`flex items-center border-b-8 ${
-                            project.id % 2 === 0
-                              ? "border-cyan-500"
-                              : "border-indigo-500"
-                          }  pb-2`}
-                        >
-                          <Images
-                            className={`h-20 border-b-8 ${
-                              project.id % 2 === 0
-                                ? "border-cyan-500"
-                                : "border-indigo-500"
-                            }  pb-2`}
-                            item={backendTech}
-                            tech={tech}
-                            title={backendTech.title}
-                            pathName={pathName}
-                          />
-                        </div>
-                      )
-                    );
-                  })}
-                </div>
-              </>
+              <TechBackendProject project={project} pathName={pathName} />
             )}
             <div className="title-buttons flex justify-evenly text-slate-100 text-2xl uppercase font-semibold py-10">
               <a
