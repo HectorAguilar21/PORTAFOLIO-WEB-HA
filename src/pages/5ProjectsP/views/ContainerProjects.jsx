@@ -1,12 +1,48 @@
 import React from "react";
+import { easeInOut, motion } from "framer-motion";
 import ProjectDescription from "../components/ProjectDescription";
 
 export default function ContainerProjects({ project }) {
+  const variants = {
+    slide: {
+      x: 700,
+    },
+    slideComplete: ({ delay }) => ({
+      x: 0,
+      transition: {
+        type: "spring",
+        delay,
+        ease: easeInOut,
+        duration: 1,
+      },
+    }),
+
+    opacity: {
+      x: -100,
+      opacity: 0,
+    },
+    opacityComplete: ({ delay }) => ({
+      x: 0,
+      opacity: 1,
+      transition: {
+        delay,
+        ease: easeInOut,
+        duration: 1,
+      },
+    }),
+  };
+
   return (
     <div className={`my-auto w-full`}>
-      <h1 className="title-project text-center text-6xl text-white capitalize pb-20 ">
+      <motion.h1
+        className="title-project text-center text-white capitalize sFHD:text-6xl sHD:text-4xl sFHD:pb-10 sHD:pb-2"
+        initial="opacity"
+        animate="opacityComplete"
+        custom={{ delay: 0 }}
+        variants={variants}
+      >
         {project.title}
-      </h1>
+      </motion.h1>
       <div
         className={`w-full flex justify-center items-center ${
           //Recordar cambia el !== por el ===
@@ -14,9 +50,13 @@ export default function ContainerProjects({ project }) {
         }`}
       >
         <div className="w-1/2 flex justify-start">
-          <div className="w-3/4 min-h-475 flex items-center">
-            <img
+          <div className="sFHD:w-3/4 sHD:w-10/12 min-h-475 flex items-center overflow-hidden">
+            <motion.img
               className="min-w-360 max-h-475 max-w-720 my-auto"
+              initial="opacity"
+              animate="opacityComplete"
+              custom={{ delay: 0.5 }}
+              variants={variants}
               src={project.images}
               alt={project.title}
               title={project.title}
@@ -24,9 +64,27 @@ export default function ContainerProjects({ project }) {
           </div>
         </div>
         <div className="w-1/2 flex justify-end">
-          <div className="w-3/4">
-            <ProjectDescription project={project} />
-          </div>
+          <motion.div
+            className={`sFHD:w-3/4 sHD:w-10/12 rounded-3xl overflow-hidden ${
+              //Recordar cambia el !== por el ===
+              project.id % 2 !== 0
+                ? "border-r-4 border-cyan-700"
+                : "border-l-4 border-indigo-700"
+            }`}
+            initial="opacity"
+            animate="opacityComplete"
+            custom={{ delay: 0 }}
+          >
+            <motion.div
+              className=""
+              initial="slide"
+              animate="slideComplete"
+              custom={{ delay: 1.5 }}
+              variants={variants}
+            >
+              <ProjectDescription project={project} />
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </div>

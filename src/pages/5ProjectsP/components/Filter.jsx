@@ -1,11 +1,33 @@
 import React from "react";
+import { easeInOut, motion } from "framer-motion";
 import { BackendList, FrontendList } from "../../data/Data";
 
 export default function Filter({ selectedTech, setSelectedTech }) {
+  const variants = {
+    opacity: {
+      y: -100,
+      opacity: 0,
+    },
+    opacityComplete: ({ delay }) => ({
+      y: 0,
+      opacity: 1,
+      transition: {
+        delay,
+        ease: easeInOut,
+        duration: 1,
+      },
+    }),
+  };
   return (
-    <div className="fixed-top top-5 flex justify-center">
+    <motion.div
+      className="fixed-top flex justify-center sFHD:top-5 sHD:top-1"
+      initial="opacity"
+      animate="opacityComplete"
+      custom={{ delay: 2 }}
+      variants={variants}
+    >
       <div className="bg-white py-2 px-10 rounded-full shadow-md shadow-slate-800">
-        <label className="title-nav text-xl" htmlFor="tech">
+        <label className="title-nav sFHD:text-xl sHD:text-base" htmlFor="tech">
           Filter by technology:
         </label>
         <select
@@ -29,6 +51,6 @@ export default function Filter({ selectedTech, setSelectedTech }) {
           ))}
         </select>
       </div>
-    </div>
+    </motion.div>
   );
 }

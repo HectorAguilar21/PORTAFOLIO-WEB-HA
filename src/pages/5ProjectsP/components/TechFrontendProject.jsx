@@ -5,7 +5,7 @@ import Images from "../../1Reusable components/Images";
 export default function TechFrontendProject({ project, pathName }) {
   return (
     <>
-      <h5 className="tech-title text-center text-3xl font-bold py-10">
+      <h5 className="tech-title text-center font-bold sFHD:py-10 sHD:py-5 sFHD:text-3xl sHD:text-2xl">
         Front-end:
       </h5>
       <div className="flex justify-evenly">
@@ -21,7 +21,7 @@ export default function TechFrontendProject({ project, pathName }) {
                 }  pb-2`}
               >
                 <Images
-                  className={`h-20 border-b-8 ${
+                  className={`h-10 border-b-8 ${
                     project.id % 2 === 0
                       ? "border-cyan-500"
                       : "border-indigo-500"

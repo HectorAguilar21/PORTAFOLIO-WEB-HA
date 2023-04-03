@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+import { motion, easeInOut } from "framer-motion";
 import TechFrontendProject from "./TechFrontendProject";
 import TechBackendProject from "./TechBackendProject";
 
@@ -9,14 +10,12 @@ export default function ProjectDescription({ project }) {
 
   return (
     <div
-      className={`h-full w-full min-h-475 rounded-3xl transition-all ease-in-out duration-500 backdrop-filter backdrop-blur-lg bg-white bg-opacity-10 text-white ${
+      className={`min-h-475 rounded-3xl transition-all ease-in-out duration-100 backdrop-filter backdrop-blur-3xl bg-opacity-50 text-white ${
         //Recordar cambia el !== por el ===
-        project.id % 2 !== 0
-          ? "border-r-4 border-cyan-700 hover:bg-indigo-600"
-          : "border-l-4 border-indigo-700 hover:bg-cyan-600"
-      } border-cyan-600`}
+        project.id % 2 !== 0 ? "bg-indigo-600" : "bg-cyan-600"
+      } `}
     >
-      <p className="parragraph-section text-xl text-center rounded-3xl px-20 pt-3">
+      <p className="parragraph-section text-center rounded-3xl pt-3 sFHD:px-20 sHD:px-5 sFHD:text-xl sHD:text-base">
         {project.description}
       </p>
       {project.techF !== "" && (
@@ -25,13 +24,13 @@ export default function ProjectDescription({ project }) {
       {project.techB !== "" && (
         <TechBackendProject project={project} pathName={pathName} />
       )}
-      <div className="title-buttons flex justify-evenly text-slate-100 text-2xl uppercase font-semibold py-10">
+      <div className="title-buttons flex justify-evenly text-slate-100  uppercase font-semibold sFHD:py-10 sHD:py-5 sFHD:text-2xl sHD:text-lg">
         <a
-          className={`${
+          className={`rounded-3xl w-48 text-center transition-all ease-in-out duration-300 shadow-xl sFHD:p-3 sHD:p-1 ${
             project.id % 2 !== 0
               ? "bg-cyan-600 hover:bg-cyan-700"
               : "bg-indigo-600 hover:bg-indigo-700"
-          } p-3 rounded-3xl w-48 text-center transition-all ease-in-out duration-300 shadow-xl`}
+          } `}
           href={project.github}
           target="_blank"
         >
@@ -40,11 +39,11 @@ export default function ProjectDescription({ project }) {
 
         <Link
           to={project.path}
-          className={`${
+          className={`rounded-3xl w-48 text-center transition-all ease-in-out duration-300 shadow-xl sFHD:p-3 sHD:p-1 ${
             project.id % 2 !== 0
               ? "bg-cyan-600 hover:bg-cyan-700"
               : "bg-indigo-600 hover:bg-indigo-700"
-          } p-3 rounded-3xl w-48 text-center transition-all ease-in-out duration-300 shadow-xl`}
+          } `}
         >
           See more
         </Link>

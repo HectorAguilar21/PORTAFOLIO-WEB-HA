@@ -5,7 +5,7 @@ import Images from "../../1Reusable components/Images";
 export default function TechBackendProject({ project, pathName }) {
   return (
     <>
-      <h5 className="tech-title text-center text-3xl font-bold py-10">
+      <h5 className="tech-title text-center font-bold sFHD:py-10 sHD:py-5 sFHD:text-3xl sHD:text-2xl">
         Back-end:
       </h5>
       <div className="flex justify-evenly">
