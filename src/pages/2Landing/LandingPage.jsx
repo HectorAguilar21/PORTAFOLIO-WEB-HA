@@ -13,7 +13,7 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <div className="landing-page flex w-screen h-screen bg-cyan-700">
+    <div className="landing-page flex w-screen h-screen bg-fixed overflow-auto bg-cyan-700">
       {loading ? <Loading /> : <Cover />}
     </div>
   );

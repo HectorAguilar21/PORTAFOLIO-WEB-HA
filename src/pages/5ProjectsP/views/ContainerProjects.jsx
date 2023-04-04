@@ -5,7 +5,7 @@ import ProjectDescription from "../components/ProjectDescription";
 export default function ContainerProjects({ project }) {
   const variants = {
     slide: {
-      x: 700,
+      x: 800,
     },
     slideComplete: ({ delay }) => ({
       x: 0,
@@ -13,7 +13,7 @@ export default function ContainerProjects({ project }) {
         type: "spring",
         delay,
         ease: easeInOut,
-        duration: 1,
+        duration: 1.5,
       },
     }),
 
@@ -30,14 +30,26 @@ export default function ContainerProjects({ project }) {
         duration: 1,
       },
     }),
+
+    opacityTwo: {
+      opacity: 0,
+    },
+    opacityTwoComplete: ({ delay }) => ({
+      opacity: 1,
+      transition: {
+        delay,
+        ease: easeInOut,
+        duration: 1,
+      },
+    }),
   };
 
   return (
     <div className={`my-auto w-full`}>
       <motion.h1
         className="title-project text-center text-white capitalize sFHD:text-6xl sHD:text-4xl sFHD:pb-10 sHD:pb-2"
-        initial="opacity"
-        animate="opacityComplete"
+        initial="opacityTwo"
+        animate="opacityTwoComplete"
         custom={{ delay: 0 }}
         variants={variants}
       >
@@ -71,9 +83,10 @@ export default function ContainerProjects({ project }) {
                 ? "border-r-4 border-cyan-700"
                 : "border-l-4 border-indigo-700"
             }`}
-            initial="opacity"
-            animate="opacityComplete"
+            initial="opacityTwo"
+            animate="opacityTwoComplete"
             custom={{ delay: 0 }}
+            variants={variants}
           >
             <motion.div
               className=""

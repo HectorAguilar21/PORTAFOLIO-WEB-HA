@@ -10,22 +10,22 @@ export default function ContainerProjects2({ project }) {
   const location = useLocation();
   const pathName = location.pathname;
 
-  const projectVariants = {
-    offscreen: {
-      x: `${project.id % 2 === 0 ? 800 : -800}`,
-      opacity: 0,
-    },
-    onscreen: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.75,
-        ease: "easeInOut",
-        type: "spring",
-        bounce: 0.4,
-      },
-    },
-  };
+  // const projectVariants = {
+  //   offscreen: {
+  //     x: `${project.id % 2 === 0 ? 800 : -800}`,
+  //     opacity: 0,
+  //   },
+  //   onscreen: {
+  //     x: 0,
+  //     opacity: 1,
+  //     transition: {
+  //       duration: 0.75,
+  //       ease: "easeInOut",
+  //       type: "spring",
+  //       bounce: 0.4,
+  //     },
+  //   },
+  // };
 
   return (
     <div className="h-full w-5/6 flex flex-col justify-center pb-10">
@@ -37,22 +37,18 @@ export default function ContainerProjects2({ project }) {
           project.id % 2 === 0 && "flex-row-reverse"
         }`}
       >
-        <div
-          className={`h-full flex items-center w-1/2 ${
-            project.id % 2 === 0 ? "bg-indigo-700" : "bg-cyan-700"
-          } pr-20 z-50`}
-        >
+        <div className={`h-full flex items-center w-1/2`}>
           <img className="" src={project.images} alt="" />
         </div>
         <motion.div
           className={`w-1/2 h-full rounded-3xl transition-all ease-in-out duration-500 ${
             project.id % 2 === 0
-              ? "border-r-2 border-cyan-700 hover:bg-indigo-600"
-              : "border-l-2 border-indigo-700 hover:bg-cyan-600"
+              ? "border-r-2 border-cyan-700 "
+              : "border-l-2 border-indigo-700 "
           } border-cyan-600`}
-          initial="offscreen"
-          whileInView="onscreen"
-          viewport={{ once: false, amount: 0.5 }}
+          // initial="offscreen"
+          // whileInView="onscreen"
+          // viewport={{ once: false, amount: 0.5 }}
         >
           <motion.div
             className="h-full flex flex-col justify-evenly text-white"
