@@ -266,6 +266,7 @@ export const FrontendList = [
       },
     ]
   },
+
 ]
 
 export const BackendList = [
@@ -352,310 +353,310 @@ export const ToolsList = [
 ]
 
 export const Projects = [
-  // {
-  //   id: 1,
-  //   title: 'Reloj digital',
-  //   description: '"Reloj Digital sencillo, se demuestra el manejo de los metodos relacionados a la obtencion de fechas y formateo de las mismas."',
-  //   images: "/src/assets/img/Projects/Reloj_digital/rm355-pf-s73-card-device-03-google-mockup.png",
-  //   github: "https://github.com/HectorAguilar21",
-  //   path: "/",
-  //   techF: [
-  //     {
-  //       title: 'html',
-  //       icon: IconsTechBN['html'],
-  //       iconC: IconsTechC['html'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'css',
-  //       icon: IconsTechBN['css'],
-  //       iconC: IconsTechC['css'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'javascript',
-  //       icon: IconsTechBN['javascript'],
-  //       iconC: IconsTechC['javascript'],
-  //       tech: 'F'
-  //     },
-  //   ],
-  //   techB: ''
-  // },
-  // {
-  //   id: 2,
-  //   title: 'listado de personas',
-  //   description: '"Listado de personas sencillo utilizando LocalStorage."',
-  //   images: "/src/assets/img/Projects/Listado_personas/rm355-pf-s73-card-device-03-google-mockup.png",
-  //   github: "https://github.com/HectorAguilar21",
-  //   path: "/",
-  //   techF: [
-  //     {
-  //       title: 'html',
-  //       icon: IconsTechBN['html'],
-  //       iconC: IconsTechC['html'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'css',
-  //       icon: IconsTechBN['css'],
-  //       iconC: IconsTechC['css'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'javascript',
-  //       icon: IconsTechBN['javascript'],
-  //       iconC: IconsTechC['javascript'],
-  //       tech: 'F'
-  //     },
-  //   ],
-  //   techB: ''
-  // },
-  // {
-  //   id: 3,
-  //   title: 'calculadora',
-  //   description: '"Calculadora con las operaciones basicas utilanzdo javascript."',
-  //   images: "/src/assets/img/Projects/Calculadora/rm355-pf-s73-card-device-03-google-mockup.png",
-  //   github: "https://github.com/HectorAguilar21",
-  //   path: "/",
-  //   techF: [
-  //     {
-  //       title: 'html',
-  //       icon: IconsTechBN['html'],
-  //       iconC: IconsTechC['html'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'css',
-  //       icon: IconsTechBN['css'],
-  //       iconC: IconsTechC['css'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'javascript',
-  //       icon: IconsTechBN['javascript'],
-  //       iconC: IconsTechC['javascript'],
-  //       tech: 'F'
-  //     },
-  //   ],
-  //   techB: ''
-  // },
-  // {
-  //   id: 4,
-  //   title: 'presupuesto sencillo',
-  //   description: '"Presupuesto con opciones basicas para el control de ingresos y gastos, haciendo uso tambien de localStorage."',
-  //   images: "/src/assets/img/Projects/Presupuesto_sencillo/rm355-pf-s73-card-device-03-google-mockup.png",
-  //   github: "https://github.com/HectorAguilar21",
-  //   path: "/",
-  //   techF: [
-  //     {
-  //       title: 'html',
-  //       icon: IconsTechBN['html'],
-  //       iconC: IconsTechC['html'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'css',
-  //       icon: IconsTechBN['css'],
-  //       iconC: IconsTechC['css'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'javascript',
-  //       icon: IconsTechBN['javascript'],
-  //       iconC: IconsTechC['javascript'],
-  //       tech: 'F'
-  //     },
-  //   ],
-  //   techB: ''
-  // },
-  // {
-  //   id: 5,
-  //   title: 'presupuesto plus',
-  //   description: '"Presupesto un poco mas robusto, implementando otras opciones ya que se utilizar React, y se decide usar Tailwindcss para los estilos."',
-  //   images: "/src/assets/img/Projects/Presupuesto_plus/rm355-pf-s73-card-device-03-google-mockup.png",
-  //   github: "https://github.com/HectorAguilar21",
-  //   path: "/",
-  //   techF: [
-  //     {
-  //       title: 'html',
-  //       icon: IconsTechBN['html'],
-  //       iconC: IconsTechC['html'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'tailwindcss',
-  //       icon: IconsTechBN['tailwindcss'],
-  //       iconC: IconsTechC['tailwindcss'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'javascript',
-  //       icon: IconsTechBN['javascript'],
-  //       iconC: IconsTechC['javascript'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'react',
-  //       icon: IconsTechBN['react'],
-  //       icon: IconsTechC['react'],
-  //       tech: 'F',
-  //     }
-  //   ],
-  //   techB: ''
-  // },
-  // {
-  //   id: 6,
-  //   title: 'pokeapi',
-  //   description: '"El consumo de una API muy querida por la comunidad, se demuestra el consumo de la misma a traves de dos diferentes metodos, y utilzando react y ciertos hooks."',
-  //   images: "/src/assets/img/Projects/Pokeapi/rm355-pf-s73-card-device-03-google-mockup.png",
-  //   github: "https://github.com/HectorAguilar21",
-  //   path: "/",
-  //   techF: [
-  //     {
-  //       title: 'html',
-  //       icon: IconsTechBN['html'],
-  //       iconC: IconsTechC['html'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'css',
-  //       icon: IconsTechBN['css'],
-  //       iconC: IconsTechC['css'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'javascript',
-  //       icon: IconsTechBN['javascript'],
-  //       iconC: IconsTechC['javascript'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'react',
-  //       icon: IconsTechBN['react'],
-  //       icon: IconsTechC['react'],
-  //       tech: 'F',
-  //       dependencies: [
-  //         {
-  //           title: 'reat router',
-  //           icon: IconsTechBN['react router'],
-  //           iconC: IconsTechC['react router'],
-  //           tech: 'dependencies',
-  //         },
-  //         {
-  //           title: 'reat lottie',
-  //           icon: IconsTechBN['react lottie'],
-  //           iconC: IconsTechC['react lottie'],
-  //           tech: 'dependencies'
-  //         },
-  //         {
-  //           title: 'framer motion',
-  //           icon: IconsTechBN['framer motion'],
-  //           iconC: IconsTechC['framer motion'],
-  //           tech: 'dependencies'
-  //         },
-  //       ]
-  //     }
-  //   ],
-  //   techB: ''
-  // },
-  // {
-  //   id: 7,
-  //   title: 'CRM Clientes',
-  //   description: '"CRM para el control de clientes, utilizando react y localStorage."',
-  //   images: "/src/assets/img/Projects/CRM_Veterinaria/rm355-pf-s73-card-device-03-google-mockup.png",
-  //   github: "https://github.com/HectorAguilar21",
-  //   path: "/",
-  //   techF: [
-  //     {
-  //       title: 'html',
-  //       icon: IconsTechBN['html'],
-  //       iconC: IconsTechC['html'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'tailwindcss',
-  //       icon: IconsTechBN['tailwindcss'],
-  //       iconC: IconsTechC['tailwindcss'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'javascript',
-  //       icon: IconsTechBN['javascript'],
-  //       iconC: IconsTechC['javascript'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'react',
-  //       icon: IconsTechBN['react'],
-  //       icon: IconsTechC['react'],
-  //       tech: 'F',
-  //       dependencies: [
-  //         {
-  //           title: 'reat router',
-  //           icon: IconsTechBN['react router'],
-  //           iconC: IconsTechC['react router'],
-  //           tech: 'dependencies',
-  //         }
-  //       ]
-  //     }
-  //   ],
-  //   techB: ''
-  // },
-  // {
-  //   id: 8,
-  //   title: 'Hector Aguilar Photography',
-  //   description: '"Pagina web de un portafolio de fotografias, utilizando react."',
-  //   images: "/src/assets/img/Projects/HA_Photography/rm355-pf-s73-card-device-03-google-mockup.png",
-  //   github: "https://github.com/HectorAguilar21",
-  //   path: "/",
-  //   techF: [
-  //     {
-  //       title: 'html',
-  //       icon: IconsTechBN['html'],
-  //       iconC: IconsTechC['html'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'tailwindcss',
-  //       icon: IconsTechBN['tailwindcss'],
-  //       iconC: IconsTechC['tailwindcss'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'javascript',
-  //       icon: IconsTechBN['javascript'],
-  //       iconC: IconsTechC['javascript'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'react',
-  //       icon: IconsTechBN['react'],
-  //       icon: IconsTechC['react'],
-  //       tech: 'F',
-  //       dependencies: [
-  //         {
-  //           title: 'reat router',
-  //           icon: IconsTechBN['react router'],
-  //           iconC: IconsTechC['react router'],
-  //           tech: 'dependencies',
-  //         },
-  //         {
-  //           title: 'reat lottie',
-  //           icon: IconsTechBN['react lottie'],
-  //           iconC: IconsTechC['react lottie'],
-  //           tech: 'dependencies'
-  //         },
-  //         {
-  //           title: 'framer motion',
-  //           icon: IconsTechBN['framer motion'],
-  //           iconC: IconsTechC['framer motion'],
-  //           tech: 'dependencies'
-  //         },
-  //       ]
-  //     }
-  //   ],
-  //   techB: ''
-  // },
+  {
+    id: 1,
+    title: 'Reloj digital',
+    description: '"Reloj Digital sencillo, se demuestra el manejo de los metodos relacionados a la obtencion de fechas y formateo de las mismas."',
+    images: "/src/assets/img/Projects/Reloj_digital/rm355-pf-s73-card-device-03-google-mockup.png",
+    github: "https://github.com/HectorAguilar21",
+    path: "/",
+    techF: [
+      {
+        title: 'html',
+        icon: IconsTechBN['html'],
+        iconC: IconsTechC['html'],
+        tech: 'F'
+      },
+      {
+        title: 'css',
+        icon: IconsTechBN['css'],
+        iconC: IconsTechC['css'],
+        tech: 'F'
+      },
+      {
+        title: 'javascript',
+        icon: IconsTechBN['javascript'],
+        iconC: IconsTechC['javascript'],
+        tech: 'F'
+      },
+    ],
+    techB: []
+  },
+  {
+    id: 2,
+    title: 'listado de personas',
+    description: '"Listado de personas sencillo utilizando LocalStorage."',
+    images: "/src/assets/img/Projects/Listado_personas/rm355-pf-s73-card-device-03-google-mockup.png",
+    github: "https://github.com/HectorAguilar21",
+    path: "/",
+    techF: [
+      {
+        title: 'html',
+        icon: IconsTechBN['html'],
+        iconC: IconsTechC['html'],
+        tech: 'F'
+      },
+      {
+        title: 'css',
+        icon: IconsTechBN['css'],
+        iconC: IconsTechC['css'],
+        tech: 'F'
+      },
+      {
+        title: 'javascript',
+        icon: IconsTechBN['javascript'],
+        iconC: IconsTechC['javascript'],
+        tech: 'F'
+      },
+    ],
+    techB: []
+  },
+  {
+    id: 3,
+    title: 'calculadora',
+    description: '"Calculadora con las operaciones basicas utilanzdo javascript."',
+    images: "/src/assets/img/Projects/Calculadora/rm355-pf-s73-card-device-03-google-mockup.png",
+    github: "https://github.com/HectorAguilar21",
+    path: "/",
+    techF: [
+      {
+        title: 'html',
+        icon: IconsTechBN['html'],
+        iconC: IconsTechC['html'],
+        tech: 'F'
+      },
+      {
+        title: 'css',
+        icon: IconsTechBN['css'],
+        iconC: IconsTechC['css'],
+        tech: 'F'
+      },
+      {
+        title: 'javascript',
+        icon: IconsTechBN['javascript'],
+        iconC: IconsTechC['javascript'],
+        tech: 'F'
+      },
+    ],
+    techB: []
+  },
+  {
+    id: 4,
+    title: 'presupuesto sencillo',
+    description: '"Presupuesto con opciones basicas para el control de ingresos y gastos, haciendo uso tambien de localStorage."',
+    images: "/src/assets/img/Projects/Presupuesto_sencillo/rm355-pf-s73-card-device-03-google-mockup.png",
+    github: "https://github.com/HectorAguilar21",
+    path: "/",
+    techF: [
+      {
+        title: 'html',
+        icon: IconsTechBN['html'],
+        iconC: IconsTechC['html'],
+        tech: 'F'
+      },
+      {
+        title: 'css',
+        icon: IconsTechBN['css'],
+        iconC: IconsTechC['css'],
+        tech: 'F'
+      },
+      {
+        title: 'javascript',
+        icon: IconsTechBN['javascript'],
+        iconC: IconsTechC['javascript'],
+        tech: 'F'
+      },
+    ],
+    techB: []
+  },
+  {
+    id: 5,
+    title: 'presupuesto plus',
+    description: '"Presupesto un poco mas robusto, implementando otras opciones ya que se utilizar React, y se decide usar Tailwindcss para los estilos."',
+    images: "/src/assets/img/Projects/Presupuesto_plus/rm355-pf-s73-card-device-03-google-mockup.png",
+    github: "https://github.com/HectorAguilar21",
+    path: "/",
+    techF: [
+      {
+        title: 'html',
+        icon: IconsTechBN['html'],
+        iconC: IconsTechC['html'],
+        tech: 'F'
+      },
+      {
+        title: 'tailwindcss',
+        icon: IconsTechBN['tailwindcss'],
+        iconC: IconsTechC['tailwindcss'],
+        tech: 'F'
+      },
+      {
+        title: 'javascript',
+        icon: IconsTechBN['javascript'],
+        iconC: IconsTechC['javascript'],
+        tech: 'F'
+      },
+      {
+        title: 'react',
+        icon: IconsTechBN['react'],
+        icon: IconsTechC['react'],
+        tech: 'F',
+      }
+    ],
+    techB: []
+  },
+  {
+    id: 6,
+    title: 'pokeapi',
+    description: '"El consumo de una API muy querida por la comunidad, se demuestra el consumo de la misma a traves de dos diferentes metodos, y utilzando react y ciertos hooks."',
+    images: "/src/assets/img/Projects/Pokeapi/rm355-pf-s73-card-device-03-google-mockup.png",
+    github: "https://github.com/HectorAguilar21",
+    path: "/",
+    techF: [
+      {
+        title: 'html',
+        icon: IconsTechBN['html'],
+        iconC: IconsTechC['html'],
+        tech: 'F'
+      },
+      {
+        title: 'css',
+        icon: IconsTechBN['css'],
+        iconC: IconsTechC['css'],
+        tech: 'F'
+      },
+      {
+        title: 'javascript',
+        icon: IconsTechBN['javascript'],
+        iconC: IconsTechC['javascript'],
+        tech: 'F'
+      },
+      {
+        title: 'react',
+        icon: IconsTechBN['react'],
+        icon: IconsTechC['react'],
+        tech: 'F',
+        dependencies: [
+          {
+            title: 'reat router',
+            icon: IconsTechBN['react router'],
+            iconC: IconsTechC['react router'],
+            tech: 'dependencies',
+          },
+          {
+            title: 'reat lottie',
+            icon: IconsTechBN['react lottie'],
+            iconC: IconsTechC['react lottie'],
+            tech: 'dependencies'
+          },
+          {
+            title: 'framer motion',
+            icon: IconsTechBN['framer motion'],
+            iconC: IconsTechC['framer motion'],
+            tech: 'dependencies'
+          },
+        ]
+      }
+    ],
+    techB: []
+  },
+  {
+    id: 7,
+    title: 'CRM Clientes',
+    description: '"CRM para el control de clientes, utilizando react y localStorage."',
+    images: "/src/assets/img/Projects/CRM_Veterinaria/rm355-pf-s73-card-device-03-google-mockup.png",
+    github: "https://github.com/HectorAguilar21",
+    path: "/",
+    techF: [
+      {
+        title: 'html',
+        icon: IconsTechBN['html'],
+        iconC: IconsTechC['html'],
+        tech: 'F'
+      },
+      {
+        title: 'tailwindcss',
+        icon: IconsTechBN['tailwindcss'],
+        iconC: IconsTechC['tailwindcss'],
+        tech: 'F'
+      },
+      {
+        title: 'javascript',
+        icon: IconsTechBN['javascript'],
+        iconC: IconsTechC['javascript'],
+        tech: 'F'
+      },
+      {
+        title: 'react',
+        icon: IconsTechBN['react'],
+        icon: IconsTechC['react'],
+        tech: 'F',
+        dependencies: [
+          {
+            title: 'reat router',
+            icon: IconsTechBN['react router'],
+            iconC: IconsTechC['react router'],
+            tech: 'dependencies',
+          }
+        ]
+      }
+    ],
+    techB: []
+  },
+  {
+    id: 8,
+    title: 'Hector Aguilar Photography',
+    description: '"Pagina web de un portafolio de fotografias, utilizando react."',
+    images: "/src/assets/img/Projects/HA_Photography/rm355-pf-s73-card-device-03-google-mockup.png",
+    github: "https://github.com/HectorAguilar21",
+    path: "/",
+    techF: [
+      {
+        title: 'html',
+        icon: IconsTechBN['html'],
+        iconC: IconsTechC['html'],
+        tech: 'F'
+      },
+      {
+        title: 'tailwindcss',
+        icon: IconsTechBN['tailwindcss'],
+        iconC: IconsTechC['tailwindcss'],
+        tech: 'F'
+      },
+      {
+        title: 'javascript',
+        icon: IconsTechBN['javascript'],
+        iconC: IconsTechC['javascript'],
+        tech: 'F'
+      },
+      {
+        title: 'react',
+        icon: IconsTechBN['react'],
+        icon: IconsTechC['react'],
+        tech: 'F',
+        dependencies: [
+          {
+            title: 'reat router',
+            icon: IconsTechBN['react router'],
+            iconC: IconsTechC['react router'],
+            tech: 'dependencies',
+          },
+          {
+            title: 'reat lottie',
+            icon: IconsTechBN['react lottie'],
+            iconC: IconsTechC['react lottie'],
+            tech: 'dependencies'
+          },
+          {
+            title: 'framer motion',
+            icon: IconsTechBN['framer motion'],
+            iconC: IconsTechC['framer motion'],
+            tech: 'dependencies'
+          },
+        ]
+      }
+    ],
+    techB: []
+  },
   {
     id: 9,
     title: 'CRM Hospital',
@@ -718,65 +719,65 @@ export const Projects = [
       },
     ]
   },
-  // {
-  //   id: 10,
-  //   title: 'Portafolio Web',
-  //   description: '"Portafolio Web utilizando React."',
-  //   images: "/src/assets/img/Projects/Portafolio_web/rm355-pf-s73-card-device-03-google-mockup.png",
-  //   github: "https://github.com/HectorAguilar21",
-  //   path: "/",
-  //   techF: [
-  //     {
-  //       title: 'html',
-  //       icon: IconsTechBN['html'],
-  //       iconC: IconsTechC['html'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'tailwindcss',
-  //       icon: IconsTechBN['tailwindcss'],
-  //       iconC: IconsTechC['tailwindcss'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'javascript',
-  //       icon: IconsTechBN['javascript'],
-  //       iconC: IconsTechC['javascript'],
-  //       tech: 'F'
-  //     },
-  //     {
-  //       title: 'react',
-  //       icon: IconsTechBN['react'],
-  //       icon: IconsTechC['react'],
-  //       tech: 'F',
-  //       dependencies: [
-  //         {
-  //           title: 'reat router',
-  //           icon: IconsTechBN['react router'],
-  //           iconC: IconsTechC['react router'],
-  //           tech: 'dependencies',
-  //         },
-  //         {
-  //           title: 'reat lottie',
-  //           icon: IconsTechBN['react lottie'],
-  //           iconC: IconsTechC['react lottie'],
-  //           tech: 'dependencies'
-  //         },
-  //         {
-  //           title: 'framer motion',
-  //           icon: IconsTechBN['framer motion'],
-  //           iconC: IconsTechC['framer motion'],
-  //           tech: 'dependencies'
-  //         },
-  //         {
-  //           title: 'sweetalert',
-  //           icon: IconsTechBN['sweetalert'],
-  //           iconC: IconsTechC['sweetalert'],
-  //           tech: 'dependencies'
-  //         }
-  //       ]
-  //     }
-  //   ],
-  //   techB: ''
-  // },
+  {
+    id: 10,
+    title: 'Portafolio Web',
+    description: '"Portafolio Web utilizando React."',
+    images: "/src/assets/img/Projects/Portafolio_web/rm355-pf-s73-card-device-03-google-mockup.png",
+    github: "https://github.com/HectorAguilar21",
+    path: "/",
+    techF: [
+      {
+        title: 'html',
+        icon: IconsTechBN['html'],
+        iconC: IconsTechC['html'],
+        tech: 'F'
+      },
+      {
+        title: 'tailwindcss',
+        icon: IconsTechBN['tailwindcss'],
+        iconC: IconsTechC['tailwindcss'],
+        tech: 'F'
+      },
+      {
+        title: 'javascript',
+        icon: IconsTechBN['javascript'],
+        iconC: IconsTechC['javascript'],
+        tech: 'F'
+      },
+      {
+        title: 'react',
+        icon: IconsTechBN['react'],
+        icon: IconsTechC['react'],
+        tech: 'F',
+        dependencies: [
+          {
+            title: 'reat router',
+            icon: IconsTechBN['react router'],
+            iconC: IconsTechC['react router'],
+            tech: 'dependencies',
+          },
+          {
+            title: 'reat lottie',
+            icon: IconsTechBN['react lottie'],
+            iconC: IconsTechC['react lottie'],
+            tech: 'dependencies'
+          },
+          {
+            title: 'framer motion',
+            icon: IconsTechBN['framer motion'],
+            iconC: IconsTechC['framer motion'],
+            tech: 'dependencies'
+          },
+          {
+            title: 'sweetalert',
+            icon: IconsTechBN['sweetalert'],
+            iconC: IconsTechC['sweetalert'],
+            tech: 'dependencies'
+          }
+        ]
+      }
+    ],
+    techB: []
+  },
 ]

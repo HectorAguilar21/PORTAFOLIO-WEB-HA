@@ -35,7 +35,7 @@ export default function TechBackendProject({ project, pathName }) {
   return (
     <>
       <motion.h5
-        className="tech-title text-center font-bold sFHD:py-10 sHD:py-5 sFHD:text-3xl sHD:text-2xl"
+        className="tech-title text-center font-bold sFHD:py-10 sHD:py-5 sMINI:py-3 sFHD:text-3xl sHD:text-2xl sTMINI:text-2xl"
         initial="opacityTwo"
         animate="opacityTwoComplete"
         custom={{ delay: 2.25 }}
@@ -60,13 +60,15 @@ export default function TechBackendProject({ project, pathName }) {
                 custom={{ delay: (index + 8) * 0.25 }}
                 variants={variants}
               >
-                <Images
-                  className={`h-20`}
-                  item={backendTech}
-                  tech={tech}
-                  title={backendTech.title}
-                  pathName={pathName}
-                />
+                <div className="sFHD:h-20 sHDplus:h-12 sHD:h-9 sTPRO:h-16 sT:h-14 sTMINI:h-12 sMINI:h-10">
+                  <Images
+                    className={`h-20`}
+                    item={backendTech}
+                    tech={tech}
+                    title={backendTech.title}
+                    pathName={pathName}
+                  />
+                </div>
               </motion.div>
             )
           );

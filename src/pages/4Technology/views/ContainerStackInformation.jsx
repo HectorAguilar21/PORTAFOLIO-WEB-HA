@@ -1,8 +1,11 @@
 import React from "react";
 import { easeInOut, motion } from "framer-motion";
-import ContentBackend from "../components/ContentBackend";
 import ContentFrontend from "../components/ContentFrontend";
+import ContentBackend from "../components/ContentBackend";
 import ContentTools from "../components/ContentTools";
+// import ContentBackend from "../components/ContentBackend2";
+// import ContentFrontend from "../components/ContentFrontend2";
+// import ContentTools from "../components/ContentTools2";
 
 export default function ContainerStackInformation() {
   const variants = {
@@ -21,9 +24,9 @@ export default function ContainerStackInformation() {
   };
 
   return (
-    <div className="h-full sCXS:flex justify-center py-12">
+    <div className="w-full flex justify-center sHD:h-full pb-4">
       <motion.div
-        className="w-10/12 sHD:grid grid-cols-2 grid-rows-3 sHD:gap-11 sTMINI:gap-2 sMINI:gap-10 sMINI:flex sMINI:flex-col sMINI:justify-evenly mx-auto max-sCXS:pb-14"
+        className="flex flex-wrap justify-center w-10/12"
         initial="hidden"
         animate="visible"
         variants={variants}

@@ -10,7 +10,7 @@ export default function ModalInfoStack({ children, infoModal, titleModal }) {
       aria-hidden="true"
     >
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-        <div class="modal-content bg-white border-none px-10 pb-3 rounded-3xl">
+        <div class="modal-content bg-white border-none px-2 pb-3 rounded-3xl">
           <div class="modal-body">
             <h1
               class="modal-title title-stack text-indigo-800 text-5xl py-3"

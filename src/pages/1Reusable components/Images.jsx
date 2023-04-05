@@ -34,7 +34,7 @@ export default function Images({ item, pathName, tech }) {
   return (
     <>
       <button
-        className="mx-auto"
+        className="mx-auto h-full"
         onMouseEnter={
           pathStatus
             ? item.dependencies
@@ -46,13 +46,13 @@ export default function Images({ item, pathName, tech }) {
         }
       >
         <img
-          className={`mx-auto opacity-100 sFHD:h-20 sHD:h-12 sTPROplus:h-12 sTPRO:h-10 sT:h-10 sTMINI:h-10 sCXSmax:h-8 sMINI:h-6 ${
+          className={`mx-auto opacity-100 h-full${
             pathStatus
               ? item.dependencies
-                ? "transition-transform animate-bounce cursor-pointer"
+                ? "transition-transform animate-bounce cursor-pointer h-full"
                 : ""
               : tech.dependencies
-              ? "transition-transform animate-bounce cursor-pointer"
+              ? "transition-transform animate-bounce cursor-pointer h-full"
               : ""
           }`}
           src={hovered ? item.iconC : item.icon}
@@ -78,16 +78,16 @@ export default function Images({ item, pathName, tech }) {
         {pathStatus
           ? item.title === dataModal &&
             item.dependencies &&
-            item.dependencies.map((subItem, subIndex) => (
+            item.dependencies.map((subItem, Index) => (
               <motion.div
                 initial="hidden"
                 animate="visible"
-                custom={{ delay: (subIndex + 1) * 0.25 + 0.75 }}
+                custom={{ delay: (Index + 1) * 0.25 + 0.75 }}
                 variants={variants}
               >
                 <ImagesDependencie
                   item={subItem}
-                  key={subIndex}
+                  key={Index}
                   setDataModal={setDataModal}
                 />
               </motion.div>

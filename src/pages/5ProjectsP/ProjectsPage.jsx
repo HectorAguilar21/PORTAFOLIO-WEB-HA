@@ -1,15 +1,42 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Projects } from "../data/Data";
-import { motion } from "framer-motion";
-import ContainerProjects2 from "./views/ContainerProjects2";
+import scrollAnimation from "../../assets/img/Animation/arrow-down.json";
+import Lottie from "react-lottie";
 import ContainerProjects from "./views/ContainerProjects";
 import Filter from "./components/Filter";
 
 export default function ProjectsPage() {
   const [selectedTech, setSelectedTech] = useState(null);
 
+  const [reachedEndOfPage, setReachedEndOfPage] = useState(false);
+
+  function detectarFinDePagina() {
+    const alturaTotal = document.body.scrollHeight;
+    const alturaVisible = window.innerHeight;
+    const posicionActual = window.scrollY;
+
+    if (alturaTotal - (alturaVisible + posicionActual) === 0) {
+      setReachedEndOfPage(true);
+    } else {
+      setReachedEndOfPage(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", detectarFinDePagina);
+    return () => window.removeEventListener("scroll", detectarFinDePagina);
+  }, []);
+
+  const scrollOptions = {
+    loop: true,
+    autoplay: true,
+    renderSettings: {
+      preserveAspectRatio: "xMidYmid slice",
+    },
+  };
+
   return (
-    <div className="project-page w-screen h-screen relative overflow-auto flex items-center">
+    <div className="project-page w-screen h-screen relative overflow-auto">
       <Filter selectedTech={selectedTech} setSelectedTech={setSelectedTech} />
       {Projects.filter((project) =>
         selectedTech
@@ -26,24 +53,13 @@ export default function ProjectsPage() {
           >
             <ContainerProjects project={project} key={index} />
           </div>
-          // <motion.div
-          //   key={index}
-          //   className={`h-screen w-screen flex justify-center items-center overflow-scroll my-auto ${
-          //     project.id % 2 === 0 ? "bg-indigo-700" : "bg-cyan-700"
-          //   }`}
-          //   initial={{
-          //     opacity: 0,
-          //     scale: 0.5,
-          //   }}
-          //   transition={{ duration: 0.5 }}
-          //   animate={{
-          //     opacity: 1,
-          //     scale: 1,
-          //   }}
-          // >
-          //   <ContainerProjects project={project} key={index} />
-          // </motion.div>
         ))}
+
+      <div className="fixed-bottom bottom-3 w-28 left-1/2 -translate-x-1/2 pointer-events-none">
+        <Lottie
+          options={{ animationData: scrollAnimation, ...scrollOptions }}
+        />
+      </div>
     </div>
   );
 }
