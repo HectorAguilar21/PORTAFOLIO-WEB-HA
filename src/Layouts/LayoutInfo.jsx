@@ -13,7 +13,7 @@ export default function LayoutInfo() {
 
   switch (pathName) {
     case "/page/aboutme":
-      bgColor = "bg-indigo-700";
+      bgColor = "background-indigo";
       break;
     case "/page/stack":
       bgColor = "background-cyan";

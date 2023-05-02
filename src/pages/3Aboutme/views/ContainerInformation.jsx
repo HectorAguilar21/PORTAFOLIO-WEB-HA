@@ -27,8 +27,8 @@ export default function ContainerInformation() {
   }
 
   return (
-    <div className="h-full flex justify-center sTMINI:pt-10">
-      <div className=" h-5/6 w-10/12">
+    <div className="h-full flex justify-center sTMINI:pt-10 sMINI:pt-4">
+      <div className="sTMINI:h-11/12 sMINI:h-5/6 w-10/12 bg-slate-700 bg-opacity-40 backdrop-filter backdrop-blur-lg rounded-2xl">
         <nav className="title-nav text-white sTMINI:font-semibold pb-3 sHD:text-2xl sTPRO:text-xl sTMINI:text-base sCS:text-lg sMINI:text-sm max-sTMINI:text-center">
           <ul className="flex justify-around pt-2">
             {ContentTitle.map((item) => (

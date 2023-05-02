@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 export default function ContentStudies() {
   return (
-    <div className="h-full w-full rounded-3xl flex max-sHD:flex-col items-center max-sT:pb-5">
-      <div className="sHD:w-3/12 sTMINI:w-6/12 sMINI:w-5/12 sHD:my-auto sFHD:pl-16 sHD:pl-8 max-sHD:py-12 max-sTMINI:hidden">
+    <div className="h-full w-full rounded-3xl flex max-sHD:flex-col items-center max-sT:pb-5 max-sHD:justify-center">
+      <div className="sHD:w-3/12 sTMINI:w-6/12 sMINI:w-5/12 sHD:my-auto sFHD:pl-16 sHD:pl-8 max-sHD:py-12 ">
         <img
           className="shadow-2xl shadow-black sTMINI:rounded-3xl sMINI:rounded-lg"
           src="/src/assets/img/Fotos_Info/DiplomaKodigo.jpg"
@@ -18,22 +18,10 @@ export default function ContentStudies() {
           animate={{ opacity: 1 }}
         >
           Soy un desarrollador web full stack junior con una pasión por el
-          aprendizaje y la tecnología. Mi formación académica incluye un técnico
-          en electromecánica obtenido después de completar mis estudios de
-          bachillerato en 2015. Sin embargo, mi interés por la tecnología me
-          llevó a explorar diferentes áreas y, finalmente, a completar un
-          bootcamp de seis meses en Desarrollo Web Full Stack. También he
-          complementado mi formación con cursos en Udemy para mejorar aún más
-          mis habilidades.
-        </motion.p>
-        <br />
-        <motion.p
-          initial={{ opacity: 0 }}
-          transition={{ duration: 1, delay: 0.5 }}
-          animate={{ opacity: 1 }}
-        >
-          Si bien mi formación inicial fue en el campo de la electromecánica, mi
-          enfoque profesional actual y futuro se centra en el desarrollo web.
+          aprendizaje y la tecnología. Mi interés por la tecnología me llevó a
+          explorar diferentes áreas y, finalmente, a completar un bootcamp de
+          seis meses en Desarrollo Web Full Stack. También he complementado mi
+          formación con cursos en Udemy para mejorar aún más mis habilidades.
         </motion.p>
         <br />
         <motion.p
