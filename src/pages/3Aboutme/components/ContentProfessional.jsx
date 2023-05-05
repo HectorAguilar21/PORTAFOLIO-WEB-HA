@@ -1,10 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
+import ImagenPerfilTres from "../../../assets/img/Fotos_perfil/foto-perfil-3.webp";
 
 export default function ContentProfessional() {
   return (
     <div className="h-full w-full rounded-3xl flex max-sHD:flex-col items-center max-sT:pb-5 max-sHD:justify-center">
-      <div className="text-white text-justify overflow-auto sHD:w-3/4 sFHD:px-32 sHD:px-10 sFHD:text-3xl sHD:text-2xl sTPROplus:text-3xl sT:text-xl sTMINI:text-lg max-sHD:mx-6 max-sT:mx-10 max-sTMINI:mx-0 max-sHD:px-1 pt-2">
+      <div className="text-white text-justify sHD:w-3/4 sFHD:px-32 sHD:px-10 sFHD:text-3xl sHD:text-2xl sTPROplus:text-3xl sT:text-xl sTMINI:text-lg max-sHD:mx-6 max-sT:mx-10 max-sTMINI:mx-0 max-sHD:px-1 pt-2">
         <motion.p
           initial={{ opacity: 0 }}
           transition={{ duration: 1, delay: 0.25 }}
@@ -23,7 +24,7 @@ export default function ContentProfessional() {
       <div className="w-1/4 sFHD:pr-32 sHD:pr-16 sHD:my-auto max-sHD:py-12 max-sTMINI:hidden">
         <img
           className="rounded-full shadow-2xl shadow-black pt-4"
-          src="img/Fotos_perfil/foto-perfil-2.webp"
+          src={ImagenPerfilTres}
           alt=""
         />
       </div>

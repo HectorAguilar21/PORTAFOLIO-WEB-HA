@@ -7,7 +7,7 @@ export default function ContentStudies() {
       <div className="sHD:w-3/12 sTMINI:w-6/12 sMINI:w-5/12 sHD:my-auto sFHD:pl-16 sHD:pl-8 max-sHD:py-12 ">
         <img
           className="shadow-2xl shadow-black sTMINI:rounded-3xl sMINI:rounded-lg"
-          src="img/Fotos_Info/diplomakodigo.webp"
+          src="/img/Fotos_Info/diplomakodigo.webp"
           alt=""
         />
       </div>

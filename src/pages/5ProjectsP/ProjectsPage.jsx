@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Projects } from "../data/Data";
-import scrollAnimation from "../../../public/img/Animation/arrow-down.json";
+import scrollAnimation from "/src/assets/img/Animation/arrow-down.json";
 import Lottie from "react-lottie";
 import ContainerProjects from "./views/ContainerProjects";
 import Filter from "./components/Filter";

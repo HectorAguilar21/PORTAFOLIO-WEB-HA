@@ -3,7 +3,7 @@ import Lottie from "react-lottie";
 import { easeInOut, motion } from "framer-motion";
 import Buttons from "../components/Buttons";
 import { ButtonList } from "../../data/Data";
-import imagotipoData from "../../../../public/img/Logo/Imagotipo/Animaciones/imagotipoAnimacionAdaptadaSFI.json";
+import imagotipoData from "/src/assets/img/Logo/Imagotipo/Animaciones/imagotipoAnimacionAdaptadaSFI.json";
 
 export default function Cover() {
   const coverOptions = {
