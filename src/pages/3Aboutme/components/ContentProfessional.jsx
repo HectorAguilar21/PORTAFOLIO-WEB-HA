@@ -23,7 +23,7 @@ export default function ContentProfessional() {
       <div className="w-1/4 sFHD:pr-32 sHD:pr-16 sHD:my-auto max-sHD:py-12 max-sTMINI:hidden">
         <img
           className="rounded-full shadow-2xl shadow-black pt-4"
-          src="/src/assets/img/Fotos_perfil/Foto-perfil-3.png"
+          src="img/Fotos_perfil/foto-perfil-2.webp"
           alt=""
         />
       </div>

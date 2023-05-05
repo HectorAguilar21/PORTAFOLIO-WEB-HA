@@ -3,7 +3,7 @@ import Lottie from "react-lottie";
 import { easeInOut, motion } from "framer-motion";
 import Buttons from "../components/Buttons";
 import { ButtonList } from "../../data/Data";
-import imagotipoData from "/src/assets/img/Logo/Imagotipo/Animaciones/imagotipoAnimacionAdaptadaSFI.json";
+import imagotipoData from "../../../../public/img/Logo/Imagotipo/Animaciones/imagotipoAnimacionAdaptadaSFI.json";
 
 export default function Cover() {
   const coverOptions = {
@@ -72,7 +72,7 @@ export default function Cover() {
         <div className="my-auto sHD:h-2/3 max-sHD:w-4/6 max-sTMINI:w-4/6 flex">
           <motion.img
             className="rounded-full shadow-2xl shadow-black my-auto mx-auto max-h-full bg-cyan-700 max-sHD:h-[500px] max-sTPROplus:h-[450px] max-sTPRO:h-[375px] max-sTMINI:h-[250px] max-sCXS:h-[200px] max-sCS:h-[150px]"
-            src="/src/assets/img/Fotos_perfil/Foto-perfil-2.png"
+            src="img/Fotos_perfil/foto-perfil-2.webp"
             alt="Foto de perfil"
             initial={{ opacity: 0 }}
             transition={{ ease: "easeIn", duration: 2, delay: 3 }}

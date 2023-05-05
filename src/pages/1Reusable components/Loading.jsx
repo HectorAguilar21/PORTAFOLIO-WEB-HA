@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Lottie from "react-lottie";
-import isotipoData from "/src/assets/img/Logo/Isotipo/Animaciones/isotipoAnimacion.json";
+import isotipoData from "../../../public/img/Logo/Isotipo/Animaciones/isotipoAnimacion.json";
 
 export default function Loading() {
   const [animarChangeView, setAnimarChangeView] = useState(false);

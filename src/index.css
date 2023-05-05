@@ -26,15 +26,15 @@
 }
 
 .container-personal {
-  background-image: url("/src/assets/img/Fotos_Info/Familia.jpg");
+  background-image: url("img/Fotos_Info/Familia.webp");
 }
 
 .background-indigo {
-  background-image: url("/src/assets/img/BackGround/Meteor.svg");
+  background-image: url("img/BackGround/Meteor.svg");
 }
 
 .background-cyan {
-  background-image: url("/src/assets/img/BackGround/Meteor2.svg");
+  background-image: url("img/BackGround/Meteor2.svg");
 }
 /* .title-project {
   font-family: "Playfair Display", serif;
