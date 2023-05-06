@@ -25,7 +25,7 @@ export default function ContentProfessional() {
         <img
           className="rounded-full shadow-2xl shadow-black pt-4"
           src={ImagenPerfilTres}
-          alt=""
+          alt="Imagen foto de perfil"
         />
       </div>
     </div>

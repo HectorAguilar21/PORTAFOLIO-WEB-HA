@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import ImagenDiploma from "../../../assets/img/Fotos_Info/diplomakodigo.webp";
 
 export default function ContentStudies() {
   return (
@@ -7,8 +8,8 @@ export default function ContentStudies() {
       <div className="sHD:w-3/12 sTMINI:w-6/12 sMINI:w-5/12 sHD:my-auto sFHD:pl-16 sHD:pl-8 max-sHD:py-12 ">
         <img
           className="shadow-2xl shadow-black sTMINI:rounded-3xl sMINI:rounded-lg"
-          src="/img/Fotos_Info/diplomakodigo.webp"
-          alt=""
+          src={ImagenDiploma}
+          alt="Imagen de Diploma"
         />
       </div>
       <div className="text-white text-justify overflow-auto sHD:w-9/12 sFHD:px-32 sHD:px-10 sFHD:text-2xl sHD:text-xl sTPROplus:text-3xl sT:text-xl max-sHD:mx-6 max-sT:mx-10 max-sTMINI:mx-0 max-sHD:px-1">

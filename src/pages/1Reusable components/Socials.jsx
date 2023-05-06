@@ -27,10 +27,10 @@ export default function Socials() {
       bgColor = "bg-indigo-600";
       break;
     case "/page/projects":
-      bgColor = "bg-cyan-600";
+      bgColor = "bg-indigo-600";
       break;
     case "/page/contact":
-      bgColor = "bg-indigo-600";
+      bgColor = "bg-cyan-600";
       break;
     default:
       break;

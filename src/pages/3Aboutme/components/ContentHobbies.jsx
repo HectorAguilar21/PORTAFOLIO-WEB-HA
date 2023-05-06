@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import ImagenHobbie from "../../../assets/img/Fotos_Info/hobbies2.webp";
 
 export default function ContentHobbies() {
   return (
@@ -22,8 +23,8 @@ export default function ContentHobbies() {
       <div className="sTMINI:w-1/4 sMINI:w-1/3 sHD:my-auto sFHD:pr-32 sHD:pr-16 max-sHD:py-10 ">
         <img
           className="rounded-full shadow-2xl shadow-black"
-          src="/src/assets/img/Fotos_Info/Hobbies2.jpg"
-          alt=""
+          src={ImagenHobbie}
+          alt="Imagen de hobbie"
         />
       </div>
     </div>

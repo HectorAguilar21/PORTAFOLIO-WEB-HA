@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useEffect, useState } from "react";
 import { easeInOut, motion } from "framer-motion";
 import ProjectDescription from "../components/ProjectDescription";
 
@@ -32,7 +33,7 @@ export default function ContainerProjects({ project }) {
     }),
 
     slideY: {
-      y: -225,
+      y: -200,
     },
     slideYComplete: ({ delay }) => ({
       y: 0,

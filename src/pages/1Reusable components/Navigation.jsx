@@ -29,11 +29,11 @@ export default function Navigation() {
 
       break;
     case "/page/projects":
-      bgColor = "bg-cyan-600";
+      bgColor = "bg-indigo-600";
 
       break;
     case "/page/contact":
-      bgColor = "bg-indigo-600";
+      bgColor = "bg-cyan-600";
 
       break;
     default:
@@ -77,7 +77,7 @@ export default function Navigation() {
           (item) =>
             item.path !== pathName && (
               <motion.li
-                className={`p-2 font-medium  rounded-full flex justify-center items-center ${bgColor} sTPROplus:h-24 sTPROplus:w-24 sTPRO:h-20 sTPRO:w-20 sTMINI:h-16 sTMINI:w-16 sCS:h-16 sCS:w-16 sMINI:h-10 sMINI:w-10 `}
+                className={`p-2 font-medium  rounded-full flex justify-center items-center ${bgColor} sTPROplus:h-24 sTPROplus:w-24 sTPRO:h-20 sTPRO:w-20 sTMINI:h-16 sTMINI:w-16 sCS:h-16 sCS:w-16 sMINI:h-10 sMINI:w-10`}
                 variants={itemVariants}
               >
                 <Link to={item.path}>

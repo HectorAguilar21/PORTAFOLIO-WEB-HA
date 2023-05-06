@@ -3,9 +3,6 @@ import { easeInOut, motion } from "framer-motion";
 import ContentFrontend from "../components/ContentFrontend";
 import ContentBackend from "../components/ContentBackend";
 import ContentTools from "../components/ContentTools";
-// import ContentBackend from "../components/ContentBackend2";
-// import ContentFrontend from "../components/ContentFrontend2";
-// import ContentTools from "../components/ContentTools2";
 
 export default function ContainerStackInformation() {
   const variants = {

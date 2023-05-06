@@ -55,7 +55,7 @@ export default function ContainerInformation() {
         </nav>
         <AnimatePresence>
           <motion.main
-            className="parragraph-section h-full flex sMINI:items-center max-sFHD:pb-3 "
+            className="parragraph-section flex sMINI:items-center max-sFHD:pb-3 "
             key={selectedTab ? selectedTab.label : "empty"}
             transition={{ duration: 0.2 }}
             exit={{ x: -20, opacity: 0 }}

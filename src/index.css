@@ -25,30 +25,9 @@
   font-family: "Pattaya", sans-serif;
 }
 
-.container-personal {
-  background-image: url("/img/Fotos_Info/familia.webp");
-}
-
-.background-indigo {
-  background-image: url("/img/BackGround/Meteor.svg");
-}
-
-.background-cyan {
-  background-image: url("/img/BackGround/Meteor2.svg");
-}
 /* .title-project {
   font-family: "Playfair Display", serif;
 } */
-
-.progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background: red;
-  transform-origin: 0%;
-}
 
 ::-webkit-scrollbar {
   height: 10px;

@@ -1,31 +1,15 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Projects } from "../data/Data";
-import scrollAnimation from "/src/assets/img/Animation/arrow-down.json";
+import React from "react";
+import { useState } from "react";
 import Lottie from "react-lottie";
-import ContainerProjects from "./views/ContainerProjects";
 import Filter from "./components/Filter";
+import ContainerProjects from "./views/ContainerProjects";
+import { Projects } from "../data/Data";
+import scrollAnimation from "../../assets/img/Animation/arrow-down.json";
+import BgMeteorIndigo from "../../assets/img/BackGround/Meteor.svg";
+import BgMeteorCyan from "../../assets/img/BackGround/Meteor2.svg";
 
 export default function ProjectsPage() {
   const [selectedTech, setSelectedTech] = useState(null);
-
-  const [reachedEndOfPage, setReachedEndOfPage] = useState(false);
-
-  function detectarFinDePagina() {
-    const alturaTotal = document.body.scrollHeight;
-    const alturaVisible = window.innerHeight;
-    const posicionActual = window.scrollY;
-
-    if (alturaTotal - (alturaVisible + posicionActual) === 0) {
-      setReachedEndOfPage(true);
-    } else {
-      setReachedEndOfPage(false);
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener("scroll", detectarFinDePagina);
-    return () => window.removeEventListener("scroll", detectarFinDePagina);
-  }, []);
 
   const scrollOptions = {
     loop: true,
@@ -47,15 +31,18 @@ export default function ProjectsPage() {
         .sort((a, b) => b.id - a.id)
         .map((project, index) => (
           <div
-            className={`w-full h-full overflow-auto flex items-center bg-cover bg-no-repeat ${
-              project.id % 2 !== 0 ? "background-indigo" : "background-cyan"
-            }`}
+            className={`w-full h-full flex items-center bg-cover bg-no-repeat`}
+            style={{
+              backgroundImage: `url(${
+                project.id % 2 !== 0 ? BgMeteorIndigo : BgMeteorCyan
+              })`,
+            }}
           >
             <ContainerProjects project={project} key={index} />
           </div>
         ))}
 
-      <div className="fixed-bottom bottom-3 w-28 left-1/2 -translate-x-1/2 pointer-events-none">
+      <div className="fixed-bottom bottom-3 sTMINI:w-28 left-1/2 -translate-x-1/2 pointer-events-none sCXS:w-20 sMINI:w-12">
         <Lottie
           options={{ animationData: scrollAnimation, ...scrollOptions }}
         />

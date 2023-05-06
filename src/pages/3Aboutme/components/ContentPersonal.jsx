@@ -1,10 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
+import FondoFamilia from "../../../assets/img/Fotos_Info/familia.webp";
 
 export default function ContentPersonal() {
   return (
     <motion.div
-      className="container-personal flex w-full bg-cover bg-center rounded-3xl sCXS:h-full sCS:h-11/12 sMINI:h-5/6 max-sHD:justify-center"
+      className="flex w-full bg-cover bg-center rounded-3xl h-full "
+      style={{ backgroundImage: `url(${FondoFamilia})` }}
       initial={{ opacity: 0 }}
       transition={{ duration: 1, delay: 0.25 }}
       animate={{ opacity: 1 }}

@@ -1,33 +1,11 @@
 import React from "react";
 import { useEffect, useState } from "react";
-import { Outlet, useLocation } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Loading from "../pages/1Reusable components/Loading";
 import Navigation from "../pages/1Reusable components/Navigation";
 import Socials from "../pages/1Reusable components/Socials";
 
 export default function LayoutInfo() {
-  const location = useLocation();
-  const pathName = location.pathname;
-
-  let bgColor;
-
-  switch (pathName) {
-    case "/page/aboutme":
-      bgColor = "background-indigo";
-      break;
-    case "/page/stack":
-      bgColor = "background-cyan";
-      break;
-    case "/page/projects":
-      bgColor = "bg-indigo-700";
-      break;
-    case "/page/contact":
-      bgColor = "background-indigo";
-      break;
-    default:
-      break;
-  }
-
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -38,7 +16,7 @@ export default function LayoutInfo() {
 
   return (
     <div
-      className={`layout-info relative h-screen w-screen overflow-hidden ${bgColor} bg-cover bg-no-repeat`}
+      className={`layout-info relative h-screen w-screen overflow-hidden bg-indigo-700 transition-all ease-in-out duration-1000`}
     >
       {loading ? (
         <Loading />
