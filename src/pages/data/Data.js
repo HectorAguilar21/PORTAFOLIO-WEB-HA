@@ -8,6 +8,7 @@ import ReactRouterBN from '../../assets/img/Stack/Frontend/SVG_BN/reactrouter.sv
 import ReactLottieBN from '../../assets/img/Stack/Frontend/SVG_BN/lottiefiles.svg';
 import FramerMotionBN from '../../assets/img/Stack/Frontend/SVG_BN/framer.svg';
 import SweetAlertBN from '../../assets/img/Stack/Frontend/SVG_BN/sweetalert.svg';
+import ChartJSBN from '../../assets/img/Stack/Frontend/SVG_BN/chartdotjs.svg'
 import PHPBN from '../../assets/img/Stack/Backend/SVG_BN/php.svg';
 import LaravelBN from '../../assets/img/Stack/Backend/SVG_BN/laravel.svg';
 import NodeJSBN from '../../assets/img/Stack/Backend/SVG_BN/nodedjs.svg';
@@ -30,6 +31,7 @@ import ReactRouterColor from '../../assets/img/Stack/Frontend/SVG_COLOR/reactrou
 import ReactLottieColor from '../../assets/img/Stack/Frontend/SVG_COLOR/lottiefiles.svg';
 import FramerMotionColor from '../../assets/img/Stack/Frontend/SVG_COLOR/framer.svg';
 import SweetAlertColor from '../../assets/img/Stack/Frontend/SVG_COLOR/sweetalert.svg';
+import ChartJSColor from '../../assets/img/Stack/Frontend/SVG_COLOR/chartdotjs.svg'
 import PHPColor from '../../assets/img/Stack/Backend/SVG_COLOR/php.svg';
 import LaravelColor from '../../assets/img/Stack/Backend/SVG_COLOR/laravel.svg';
 import NodeJSColor from '../../assets/img/Stack/Backend/SVG_COLOR/nodedjs.svg';
@@ -69,10 +71,11 @@ import MockupPokeApi from '../../assets/img/Projects/Poke-api/Mockup/mockuppokea
 import MockupPresupuestoApp from '../../assets/img/Projects/Presupuesto_app/mockup/finanzasparatodos.webp'
 import MockupCRMHospital from '../../assets/img/Projects/CRM_Hospital/mockup/mockupcrmhospital.webp'
 import MockupCRMPaciente from '../../assets/img/Projects/CRM_Paciente/mockup/mockupcrmpacientes.webp'
+import MockupPortafolioWeb from '../../assets/img/Projects/Portafolio_web/mockup/mockupportafolioweb.webp'
 
 export const ButtonList = [
   {
-    title: "about me",
+    title: "Sobre mí",
     path: "/page/aboutme"
   },
   {
@@ -80,11 +83,11 @@ export const ButtonList = [
     path: "/page/stack"
   },
   {
-    title: "projects",
+    title: "proyectos",
     path: "/page/projects"
   },
   {
-    title: "contact",
+    title: "contacto",
     path: "/page/contact"
   },
 ]
@@ -92,15 +95,15 @@ export const ButtonList = [
 export const ContentTitle = [
   {
     icon: "👨🏻‍💻",
-    label: "Professional"
+    label: "Profesional"
   },
   {
     icon: "👨‍🎓",
-    label: "Studies"
+    label: "Estudios"
   },
   {
     icon: "👨🏻‍🍳",
-    label: "Hobbies"
+    label: "Hobby"
   },
   {
     icon: "👨‍👩‍👦",
@@ -141,7 +144,7 @@ export const ContentListEmojis = [
 
 export const DirectionList = [
   {
-    title: "Home",
+    title: "Inicio",
     path: "/",
     icon: IconHome
   },
@@ -156,12 +159,12 @@ export const DirectionList = [
     icon: IconStack
   },
   {
-    title: "Projects",
+    title: "Proyectos",
     path: "/page/projects",
     icon: IconProjects
   },
   {
-    title: "Contact",
+    title: "Contacto",
     path: "/page/contact",
     icon: IconContact
   },
@@ -263,6 +266,11 @@ export const FrontendList = [
         icon: SweetAlertBN,
         iconC: SweetAlertColor,
       },
+      {
+        title: "ChartJS",
+        icon: ChartJSBN,
+        iconC: ChartJSColor
+      }
     ]
   },
 
@@ -333,7 +341,7 @@ export const Projects = [
   {
     id: 1,
     title: 'Reloj digital',
-    description: '"Reloj Digital sencillo, se demuestra el manejo de los metodos relacionados a la obtencion de fechas y formateo de las mismas."',
+    description: '"Este proyecto es un reloj digital sencillo que demuestra el manejo de métodos relacionados con la obtención y formateo de fechas."',
     images: MockupReloj,
     github: "https://github.com/HectorAguilar21/RELOJ-DIGITAL---ANALOGO",
     page: "https://hectoraguilar21.github.io/RELOJ-DIGITAL---ANALOGO/",
@@ -361,7 +369,7 @@ export const Projects = [
   {
     id: 2,
     title: 'Calculadora',
-    description: '"Calculadora con las operaciones basicas utilanzdo javascript."',
+    description: '"Esta es una calculadora básica que utiliza JavaScript para realizar las operaciones aritméticas fundamentales."',
     images: MockupCalculadora,
     github: "https://github.com/HectorAguilar21/CALCULADORA",
     page: "https://hectoraguilar21.github.io/CALCULADORA/",
@@ -389,7 +397,7 @@ export const Projects = [
   {
     id: 3,
     title: 'Listado de personas',
-    description: '"Listado de personas sencillo utilizando LocalStorage."',
+    description: '"Este proyecto presenta un listado de personas con un diseño sencillo pero elegante, que permite visualizar la información de manera clara y concisa."',
     images: MockupListado,
     github: "https://github.com/HectorAguilar21/LISTADO-PERSONAS",
     page: "https://hectoraguilar21.github.io/LISTADO-PERSONAS/",
@@ -417,7 +425,7 @@ export const Projects = [
   {
     id: 4,
     title: 'Poke-Api',
-    description: '"El consumo de una API muy querida por la comunidad, se demuestra el consumo de la misma a traves de dos diferentes metodos, y utilzando react y ciertos hooks."',
+    description: '"En este proyecto se demuestra el consumo de una API muy popular entre la comunidad a través de dos métodos distintos, utilizando React y ciertos hooks. El objetivo es mostrar la eficacia de estos métodos para obtener datos de una API y cómo se pueden utilizar para desarrollar aplicaciones web interactivas y dinámicas."',
     images: MockupPokeApi,
     github: "https://github.com/HectorAguilar21/POKE-API",
     page: 'https://hectoraguilar21.github.io/POKE-API/',
@@ -443,6 +451,14 @@ export const Projects = [
         title: 'react',
         icon: ReactBN,
         icon: ReactColor,
+        dependencies: [
+          {
+            title: 'ChartJS',
+            icon: ChartJSBN,
+            iconC: ChartJSColor,
+            tech: 'dependencies',
+          }
+        ]
       }
     ],
     techB: []
@@ -450,7 +466,7 @@ export const Projects = [
   {
     id: 5,
     title: 'Presupuesto App',
-    description: '"Presupuesto con opciones basicas para el control de ingresos y gastos, haciendo uso tambien de localStorage."',
+    description: '"Este es un proyecto de presupuesto que ofrece opciones básicas para controlar ingresos y gastos. Además, utiliza localStorage para almacenar los datos, lo que permite al usuario acceder a su información incluso después de cerrar y volver a abrir la aplicación. "',
     images: MockupPresupuestoApp,
     github: "https://github.com/HectorAguilar21/FINANZAS-PARA-TODOS-APP",
     page: "https://hectoraguilar21.github.io/FINANZAS-PARA-TODOS-APP/",
@@ -476,6 +492,14 @@ export const Projects = [
         title: 'react',
         icon: ReactBN,
         icon: ReactColor,
+        dependencies: [
+          {
+            title: 'ChartJS',
+            icon: ChartJSBN,
+            iconC: ChartJSColor,
+            tech: 'dependencies',
+          }
+        ]
       }
     ],
     techB: []
@@ -538,7 +562,7 @@ export const Projects = [
   {
     id: 6,
     title: 'CRM Hospital',
-    description: '"CRM para el control de Doctores, Secretarias, Pacientes, Citas, Hospitales, etc. Proyecto realizado para la finalizacion de un bootcamp de 6 meses"',
+    description: '"Este proyecto es un CRM completo diseñado para administrar doctores, secretarias, pacientes, citas, hospitales, y más. Fue desarrollado como parte de un bootcamp de 6 meses y es un excelente ejemplo de cómo la tecnología puede simplificar y optimizar la gestión de la atención médica. "',
     images: MockupCRMHospital,
     github: "https://github.com/HectorAguilar21/CRM-HOSPITAL-SISTEMA-DE-SALUD",
     page: 'https://hectoraguilar21.github.io/CRM-HOSPITAL-SISTEMA-DE-SALUD/',
@@ -598,7 +622,7 @@ export const Projects = [
   {
     id: 7,
     title: 'CRM Pacientes',
-    description: '"App para que los pacientes del hospital puedan consultar entre otras cosas, sus citas, resultados, etc..."',
+    description: '"Esta es una aplicación complementaria al CRM anterior, diseñada específicamente para que los pacientes del hospital puedan consultar información como sus citas, resultados de exámenes y más. "',
     images: MockupCRMPaciente,
     github: "https://github.com/HectorAguilar21/CRM-PACIENTE-SISTEMA-DE-SALUD",
     page: 'https://hectoraguilar21.github.io/CRM-PACIENTE-SISTEMA-DE-SALUD/',
@@ -655,63 +679,63 @@ export const Projects = [
       },
     ]
   },
-  // {
-  //   id: 8,
-  //   title: 'Portafolio Web',
-  //   description: '"Portafolio Web utilizando React."',
-  //   images: '',
-  //   github: "https://github.com/HectorAguilar21/PORTAFOLIO-WEB-HA",
-  //   page: 'https://hectoraguilar21.github.io/PORTAFOLIO-WEB-HA/',
-  //   path: "/",
-  //   seemore: false,
-  //   techF: [
-  //     {
-  //       title: 'html',
-  //       icon: HTMLBN,
-  //       iconC: HTMLColor,
-  //     },
-  //     {
-  //       title: 'tailwindcss',
-  //       icon: TailwindcssBN,
-  //       iconC: TailwindcssColor,
-  //     },
-  //     {
-  //       title: 'javascript',
-  //       icon: JavaScriptBN,
-  //       iconC: JavaScriptColor,
-  //     },
-  //     {
-  //       title: 'react',
-  //       icon: ReactBN,
-  //       icon: ReactColor,
-  //       dependencies: [
-  //         {
-  //           title: 'react router',
-  //           icon: ReactRouterBN,
-  //           iconC: ReactRouterColor,
-  //           tech: 'dependencies',
-  //         },
-  //         {
-  //           title: 'react lottie',
-  //           icon: ReactLottieBN,
-  //           iconC: ReactLottieColor,
-  //           tech: 'dependencies'
-  //         },
-  //         {
-  //           title: 'framer motion',
-  //           icon: FramerMotionBN,
-  //           iconC: FramerMotionColor,
-  //           tech: 'dependencies'
-  //         },
-  //         {
-  //           title: 'sweetalert',
-  //           icon: SweetAlertBN,
-  //           iconC: SweetAlertColor,
-  //           tech: 'dependencies'
-  //         }
-  //       ]
-  //     }
-  //   ],
-  //   techB: []
-  // },
+  {
+    id: 8,
+    title: 'Portafolio Web',
+    description: '"Un portafolio web impresionante construido con React. Aquí podrás encontrar una descripción detallada de mis habilidades y proyectos, todo en un formato atractivo y fácil de navegar. Estoy emocionado de compartir mi trabajo contigo y espero que disfrutes explorando mi portafolio tanto como yo disfruté creándolo. ¡Gracias por visitarlo!"',
+    images: MockupPortafolioWeb,
+    github: "https://github.com/HectorAguilar21/PORTAFOLIO-WEB-HA",
+    page: 'https://hectoraguilar21.github.io/PORTAFOLIO-WEB-HA/',
+    path: "/",
+    seemore: false,
+    techF: [
+      {
+        title: 'html',
+        icon: HTMLBN,
+        iconC: HTMLColor,
+      },
+      {
+        title: 'tailwindcss',
+        icon: TailwindcssBN,
+        iconC: TailwindcssColor,
+      },
+      {
+        title: 'javascript',
+        icon: JavaScriptBN,
+        iconC: JavaScriptColor,
+      },
+      {
+        title: 'react',
+        icon: ReactBN,
+        icon: ReactColor,
+        dependencies: [
+          {
+            title: 'react router',
+            icon: ReactRouterBN,
+            iconC: ReactRouterColor,
+            tech: 'dependencies',
+          },
+          {
+            title: 'react lottie',
+            icon: ReactLottieBN,
+            iconC: ReactLottieColor,
+            tech: 'dependencies'
+          },
+          {
+            title: 'framer motion',
+            icon: FramerMotionBN,
+            iconC: FramerMotionColor,
+            tech: 'dependencies'
+          },
+          {
+            title: 'sweetalert',
+            icon: SweetAlertBN,
+            iconC: SweetAlertColor,
+            tech: 'dependencies'
+          }
+        ]
+      }
+    ],
+    techB: []
+  },
 ]

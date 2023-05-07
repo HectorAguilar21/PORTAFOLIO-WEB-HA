@@ -71,7 +71,7 @@ export default function ProjectDescription({ project }) {
           href={project.page}
           target="_blank"
         >
-          Page
+          Pagina
         </a>
         {project.seemore && (
           <Link
@@ -82,7 +82,7 @@ export default function ProjectDescription({ project }) {
                 : "bg-indigo-600 hover:bg-indigo-700"
             } `}
           >
-            See more
+            Ver mas
           </Link>
         )}
       </motion.div>

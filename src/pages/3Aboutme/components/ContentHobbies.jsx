@@ -5,7 +5,10 @@ import ImagenHobbie from "../../../assets/img/Fotos_Info/hobbies2.webp";
 export default function ContentHobbies() {
   return (
     <div className="h-full w-full rounded-3xl flex max-sHD:flex-col items-center max-sHD:items-center max-sT:pb-5 max-sHD:justify-center">
-      <div className="text-white text-justify overflow-auto sHD:w-3/4 sFHD:px-32 sHD:px-10 sFHD:text-2xl sHD:text-xl sTPROplus:text-2xl sT:text-base max-sHD:mx-6 max-sT:mx-10 max-sTMINI:mx-0 max-sHD:px-1">
+      <div
+        className="text-white text-justify sHD:w-3/4 sFHD:px-32 sHD:px-16 sTPRO:px-16
+      sTMINI:px-8 sMINI:px-6 sFHD:text-3xl sHD:text-xl sTPRO:text-2xl sTMINI:text-xl sCXS:text-base sCS:text-sm sMINI:text-xs max-sHD:mx-6 max-sT:mx-10 max-sTMINI:mx-0 max-sHD:px-1"
+      >
         <motion.p
           initial={{ opacity: 0 }}
           transition={{ duration: 1, delay: 0.25 }}

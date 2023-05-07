@@ -28,8 +28,8 @@ export default function ContainerInformation() {
 
   return (
     <div className="h-full flex justify-center sTMINI:pt-10 sMINI:pt-4">
-      <div className="sTMINI:h-11/12 sMINI:h-5/6 w-10/12 bg-slate-700 bg-opacity-40 backdrop-filter backdrop-blur-lg rounded-2xl">
-        <nav className="title-nav text-white sTMINI:font-semibold pb-3 sHD:text-2xl sTPRO:text-xl sTMINI:text-base sCS:text-lg sMINI:text-sm max-sTMINI:text-center">
+      <div className="sMINI:h-11/12 w-10/12 bg-slate-700 bg-opacity-40 backdrop-filter backdrop-blur-lg rounded-2xl">
+        <nav className="title-nav text-white sTMINI:font-semibold pb-3 sHD:text-2xl sTPRO:text-xl sTMINI:text-base sCS:text-base sMINI:text-sm max-sTMINI:text-center">
           <ul className="flex justify-around pt-2">
             {ContentTitle.map((item) => (
               <motion.li
@@ -42,10 +42,13 @@ export default function ContainerInformation() {
                 animate={{ scale: 1 }}
                 onClick={() => setSelectedTab(item)}
               >
-                {`${item.icon} ${item.label}`}
+                <p className="max-sTMINI:flex flex-col">
+                  {item.icon}
+                  <span>{item.label}</span>
+                </p>
                 {item === selectedTab ? (
                   <motion.div
-                    className="absolute left-0 right-0 h-1 bg-indigo-600 sHD:top-10 sTPRO:top-9 sTMINI:top-8 sCS:top-16 sMINI:top-10"
+                    className="absolute left-0 right-0 h-1 bg-indigo-600 sHD:top-10 sTPRO:top-9 sTMINI:top-8 sCS:top-14 sMINI:top-12"
                     layoutId="underline"
                   />
                 ) : null}
@@ -55,7 +58,7 @@ export default function ContainerInformation() {
         </nav>
         <AnimatePresence>
           <motion.main
-            className="parragraph-section flex sMINI:items-center max-sFHD:pb-3 "
+            className="parragraph-section flex sMINI:items-center max-sFHD:pb-3 h-[91%]"
             key={selectedTab ? selectedTab.label : "empty"}
             transition={{ duration: 0.2 }}
             exit={{ x: -20, opacity: 0 }}

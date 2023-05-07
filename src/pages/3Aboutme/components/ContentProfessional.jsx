@@ -5,7 +5,10 @@ import ImagenPerfilTres from "../../../assets/img/Fotos_perfil/foto-perfil-3.web
 export default function ContentProfessional() {
   return (
     <div className="h-full w-full rounded-3xl flex max-sHD:flex-col items-center max-sT:pb-5 max-sHD:justify-center">
-      <div className="text-white text-justify sHD:w-3/4 sFHD:px-32 sHD:px-10 sFHD:text-3xl sHD:text-2xl sTPROplus:text-3xl sT:text-xl sTMINI:text-lg max-sHD:mx-6 max-sT:mx-10 max-sTMINI:mx-0 max-sHD:px-1 pt-2">
+      <div
+        className="text-white text-justify sHD:w-3/4 sFHD:px-32 sHD:px-16 sTPRO:px-16
+      sTMINI:px-8 sMINI:px-6 sFHD:text-3xl sHD:text-xl sTPRO:text-2xl sTMINI:text-xl sCXS:text-base sCS:text-sm sMINI:text-xs max-sHD:mx-6 max-sT:mx-10 max-sTMINI:mx-0 max-sHD:px-1 pt-2"
+      >
         <motion.p
           initial={{ opacity: 0 }}
           transition={{ duration: 1, delay: 0.25 }}
@@ -21,7 +24,7 @@ export default function ContentProfessional() {
           un desarrollador web líder.
         </motion.p>
       </div>
-      <div className="w-1/4 sFHD:pr-32 sHD:pr-16 sHD:my-auto max-sHD:py-12 max-sTMINI:hidden">
+      <div className="sTMINI:w-1/4 sMINI:w-1/3 sHD:my-auto sFHD:pr-32 sHD:pr-16 max-sHD:py-10">
         <img
           className="rounded-full shadow-2xl shadow-black pt-4"
           src={ImagenPerfilTres}

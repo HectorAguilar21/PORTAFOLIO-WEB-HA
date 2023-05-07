@@ -54,35 +54,22 @@ export default function ContentFrontend() {
             data-bs-toggle="modal"
             data-bs-target={`#${dataModal}`}
           >
-            Keep reading
+            Seguir leyendo...
           </button>
           <ModalInfoStack infoModal={dataModal} titleModal={titleModal}>
             <p>
-              I have experience in some frontend technologies and programming
-              languages. My background is in using technologies like HTML, CSS,
-              and JavaScript to create attractive and functional websites.
+              Tengo experiencia en tecnologías y lenguajes de programación de
+              frontend, como HTML, CSS, JavaScript y frameworks populares como
+              Bootstrap 5 y TailwindCSS. También he trabajado con React y React
+              Router para crear aplicaciones web interactivas.
             </p>
             <br />
             <p>
-              Also, I have worked with some popular tools and frameworks in the
-              industry. In particular, I have used Bootstrap 5 and TailwindCSS
-              to improve efficiency in developing web styles and layouts.
-            </p>
-            <br />
-            <p>
-              As for JavaScript, I have experience with React and React Router,
-              which allows me to create Single Page Applications (SPAs) with
-              interactive and dynamic functionalities.
-            </p>
-            <br />
-            <p>
-              I am excited to continue learning and growing in the web
-              development industry, exploring new technologies and tools. I am
-              always willing to work as a team and provide creative solutions to
-              solve problems and overcome challenges. As a Junior web developer,
-              my main focus is to continue improving my skills and gaining new
-              experiences to contribute to the success of the projects in which
-              I participate.
+              Me apasiona aprender y crecer en el desarrollo web, y estoy
+              dispuesto a trabajar en equipo y ofrecer soluciones creativas para
+              superar desafíos. Como desarrollador web junior, mi enfoque
+              principal es mejorar mis habilidades y contribuir al éxito de los
+              proyectos en los que participo.
             </p>
           </ModalInfoStack>
         </div>

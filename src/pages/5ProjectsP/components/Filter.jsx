@@ -28,7 +28,7 @@ export default function Filter({ selectedTech, setSelectedTech }) {
     >
       <div className="bg-white py-2 sCS:px-10 sMINI:px-3 rounded-full shadow-md shadow-slate-800">
         <label className="title-nav sFHD:text-xl sHD:text-base" htmlFor="tech">
-          Filter by technology:
+          Filtrar por tecnologia:
         </label>
         <select
           className="sTMINI:ml-10"

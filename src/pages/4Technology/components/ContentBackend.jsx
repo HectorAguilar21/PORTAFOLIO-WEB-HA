@@ -54,35 +54,23 @@ export default function ContentBackend() {
             data-bs-toggle="modal"
             data-bs-target={`#${dataModal}`}
           >
-            Keep reading
+            Seguir leyendo...
           </button>
           <ModalInfoStack infoModal={dataModal} titleModal={titleModal}>
             <p>
-              I have experience in some frontend technologies and programming
-              languages. My background is in using technologies like HTML, CSS,
-              and JavaScript to create attractive and functional websites.
+              Como desarrollador web junior, tengo experiencia en desarrollo de
+              backend utilizando diferentes tecnologías como PHP y su framework
+              popular Laravel 9+. También he trabajado con bases de datos
+              relacionales como MySQL, implementando modelos de datos eficientes
+              y consultas optimizadas para un mejor rendimiento.
             </p>
             <br />
             <p>
-              Also, I have worked with some popular tools and frameworks in the
-              industry. In particular, I have used Bootstrap 5 and TailwindCSS
-              to improve efficiency in developing web styles and layouts.
-            </p>
-            <br />
-            <p>
-              As for JavaScript, I have experience with React and React Router,
-              which allows me to create Single Page Applications (SPAs) with
-              interactive and dynamic functionalities.
-            </p>
-            <br />
-            <p>
-              I am excited to continue learning and growing in the web
-              development industry, exploring new technologies and tools. I am
-              always willing to work as a team and provide creative solutions to
-              solve problems and overcome challenges. As a Junior web developer,
-              my main focus is to continue improving my skills and gaining new
-              experiences to contribute to the success of the projects in which
-              I participate.
+              En resumen, tengo amplia experiencia en desarrollo backend
+              utilizando tecnologías como PHP, Laravel 9+ y MySQL. Siempre estoy
+              en constante aprendizaje y buscando nuevas formas de mejorar mis
+              habilidades para aplicarlas en el desarrollo de proyectos web
+              exitosos.
             </p>
           </ModalInfoStack>
         </div>

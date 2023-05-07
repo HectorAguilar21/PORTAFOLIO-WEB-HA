@@ -10,15 +10,15 @@ export default function ModalInfoStack({ children, infoModal, titleModal }) {
       aria-hidden="true"
     >
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-        <div class="modal-content bg-white border-none px-2 pb-3 rounded-3xl">
-          <div class="modal-body">
+        <div class="modal-content bg-white border-none pb-3 rounded-3xl">
+          <div class="modal-body sTMINI:px-[60px] sMINI:px-[30px]">
             <h1
               class="modal-title title-stack text-indigo-800 text-5xl py-3"
               id="exampleModalLabel"
             >
               {titleModal}
             </h1>
-            <div className="text-black pb-10 parragraph-section sFHD:text-2xl sTPRO:text-xl sTMINI:text-lg sHD:text-justify sMINI:text-center">
+            <div className="text-black pb-10 parragraph-section sFHD:text-2xl sTPRO:text-xl sTMINI:text-lg sCXS:text-base sMINI:text-sm sHD:text-justify sMINI:text-center">
               {children}
             </div>
             <button
@@ -26,7 +26,7 @@ export default function ModalInfoStack({ children, infoModal, titleModal }) {
               class="btn title-buttons bg-red-500 text-white w-full hover:bg-red-600 uppercase text-xl"
               data-bs-dismiss="modal"
             >
-              Close
+              Cerrar
             </button>
           </div>
         </div>

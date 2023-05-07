@@ -16,7 +16,7 @@ export default function LayoutInfo() {
 
   return (
     <div
-      className={`layout-info relative h-screen w-screen overflow-hidden bg-indigo-700 transition-all ease-in-out duration-1000`}
+      className={`layout-info relative h-screen w-screen overflow-hidden bg-indigo-700 `}
     >
       {loading ? (
         <Loading />

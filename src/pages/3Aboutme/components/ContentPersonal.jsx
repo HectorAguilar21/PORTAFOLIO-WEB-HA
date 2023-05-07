@@ -12,7 +12,7 @@ export default function ContentPersonal() {
       animate={{ opacity: 1 }}
     >
       <div
-        className="sTMINI:px-16 sMINI:px-3 pt-6 w-full sFHD:text-2xl sHD:text-xl sTPROplus:text-2xl sT:text-base text-white text-justify overflow-auto bg-slate-900 bg-opacity-80 rounded-3xl flex
+        className="sHD:px-28 sTMINI:px-16 sMINI:px-6 w-full sFHD:text-3xl sHD:text-xl sTPRO:text-2xl sTMINI:text-xl sCXS:text-base sCS:text-sm sMINI:text-xs text-white text-justify bg-slate-900 bg-opacity-80 rounded-3xl flex
       "
       >
         <motion.p

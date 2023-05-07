@@ -5,7 +5,7 @@ import BgMeteorIndigo from "../../assets/img/BackGround/Meteor.svg";
 export default function AboutMePage() {
   return (
     <div
-      className="landing-page w-screen h-screen"
+      className="aboutme-page w-screen h-screen bg-fixed bg-cover bg-no-repeat transition-none"
       style={{ backgroundImage: `url(${BgMeteorIndigo})` }}
     >
       <ContainerInformation />
