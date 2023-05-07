@@ -470,7 +470,7 @@ export const Projects = [
     images: MockupPresupuestoApp,
     github: "https://github.com/HectorAguilar21/FINANZAS-PARA-TODOS-APP",
     page: "https://hectoraguilar21.github.io/FINANZAS-PARA-TODOS-APP/",
-    path: "/",
+    path: "/projects/presupuesto-app",
     seemore: true,
     techF: [
       {
@@ -566,7 +566,7 @@ export const Projects = [
     images: MockupCRMHospital,
     github: "https://github.com/HectorAguilar21/CRM-HOSPITAL-SISTEMA-DE-SALUD",
     page: 'https://hectoraguilar21.github.io/CRM-HOSPITAL-SISTEMA-DE-SALUD/',
-    path: "/",
+    path: "/projects/crm-hospital",
     seemore: true,
     techF: [
       {
@@ -626,7 +626,7 @@ export const Projects = [
     images: MockupCRMPaciente,
     github: "https://github.com/HectorAguilar21/CRM-PACIENTE-SISTEMA-DE-SALUD",
     page: 'https://hectoraguilar21.github.io/CRM-PACIENTE-SISTEMA-DE-SALUD/',
-    path: "/",
+    path: '/projects/crm-paciente',
     seemore: true,
     techF: [
       {

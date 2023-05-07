@@ -6,6 +6,10 @@ import TechnologyStackPage from "./pages/4Technology/TechnologyStackPage";
 import ProjectsPage from "./pages/5ProjectsP/ProjectsPage";
 import ContactPage from "./pages/6Contact/ContactPage";
 import LayoutInfo from "./Layouts/LayoutInfo";
+import LayoutProjects from "./Layouts/LayoutProjects";
+import PresupuestoAppPage from "./pages/5ProjectsP/Pages/PresupuestoAppPage";
+import CrmHospitalPage from "./pages/5ProjectsP/Pages/CrmHospitalPage";
+import CrmPacientePage from "./pages/5ProjectsP/Pages/CrmPacientePage";
 
 const router = createHashRouter([
   {
@@ -31,6 +35,24 @@ const router = createHashRouter([
       {
         path: "/page/contact",
         element: <ContactPage />,
+      },
+    ],
+  },
+  {
+    path: "/projects",
+    element: <LayoutProjects />,
+    children: [
+      {
+        path: "/projects/presupuesto-app",
+        element: <PresupuestoAppPage />,
+      },
+      {
+        path: "/projects/crm-hospital",
+        element: <CrmHospitalPage />,
+      },
+      {
+        path: "/projects/crm-paciente",
+        element: <CrmPacientePage />,
       },
     ],
   },

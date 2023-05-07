@@ -76,6 +76,7 @@ export default function ProjectDescription({ project }) {
         {project.seemore && (
           <Link
             to={project.path}
+            target="_blank"
             className={`rounded-3xl sT:w-48 sTMINI:w-36 sMINI:w-28 text-center transition-all ease-in-out duration-300 shadow-xl sFHD:p-3 sCXS:p-1 sMINI:p-0 ${
               project.id % 2 === 0
                 ? "bg-cyan-600 hover:bg-cyan-700"
