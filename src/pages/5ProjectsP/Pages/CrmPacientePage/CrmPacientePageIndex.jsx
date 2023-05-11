@@ -63,7 +63,7 @@ export default function CrmPacientePage() {
       ) : (
         <>
           <motion.h1
-            className="title-project text-center font-light text-amber-400 sFHD:text-5xl sHD:text-3xl sTPRO:text-4xl sTMINI:text-3xl sCXS:text-2xl sMINI:text-xl pt-4"
+            className="font-Alkatra text-center font-light text-amber-400 sFHD:text-5xl sHD:text-3xl sTPRO:text-4xl sTMINI:text-3xl sCXS:text-2xl sMINI:text-xl pt-4"
             initial="hidden"
             animate="visible"
             custom={{ delay: 0.5, duration: 0.75 }}
@@ -83,7 +83,7 @@ export default function CrmPacientePage() {
                 variants={variants}
               />
               <motion.div
-                className="title-buttons sHD:w-5/6 sTMINI:w-4/6 flex flex-wrap gap-y-2 gap-x-1 justify-evenly text-slate-100  uppercase font-semibold sFHD:py-10 sTMINI:py-5 sFHD:text-2xl sHD:text-lg max-sTMINI:pb-5 max-sTMINI:pt-5 sHD:mr-5 max-sHD:m-auto"
+                className="font-SourceSansPro sHD:w-5/6 sTMINI:w-4/6 flex flex-wrap gap-y-2 gap-x-1 justify-evenly text-slate-100  uppercase font-semibold sFHD:py-10 sTMINI:py-5 sFHD:text-2xl sHD:text-lg max-sTMINI:pb-5 max-sTMINI:pt-5 sHD:mr-5 max-sHD:m-auto"
                 initial="hidden"
                 animate="visible"
                 custom={{ delay: 1.75 }}
@@ -108,7 +108,7 @@ export default function CrmPacientePage() {
             </div>
             <div className="sHD:w-1/2 overflow-hidden">
               <motion.p
-                className="description-section sHD:w-5/6 sHD:ml-5 text-center sFHD:text-2xl sHD:text-base sTPRO:text-base sTMINI:text-sm sMINI:text-xs text-zinc-300 font-medium max-sHD:m-auto max-sHD:pt-10"
+                className="font-SofiaSansCondensed sHD:w-5/6 sHD:ml-5 text-center sFHD:text-2xl sHD:text-base sTPRO:text-base sTMINI:text-sm sMINI:text-xs text-zinc-300 font-medium max-sHD:m-auto max-sHD:pt-10"
                 initial="slide"
                 animate="slideComplete"
                 custom={{ delay: 1.25, duration: 1.25 }}

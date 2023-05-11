@@ -35,7 +35,7 @@ export default function ImagesAdministradores({ proyecto }) {
   return (
     <>
       <motion.p
-        className="px-[100px] py-10 text-white text-2xl description-section text-center"
+        className="sHD:px-[100px] py-10 text-white sFHD:text-2xl sHD:text-base sTPRO:text-base sMINI:text-sm font-SofiaSansCondensed text-center"
         initial="hiddenTwo"
         animate="visibleTwo"
         custom={{ delay: 0.5 }}

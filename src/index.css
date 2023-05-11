@@ -2,34 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.title-name,
-.title-container,
-.description-section {
-  font-family: "Sofia Sans Condensed", sans-serif;
-}
-
-.title-project {
-  font-family: "Alkatra", sans-serif;
-}
-
-.title-buttons,
-.title-technology,
-.title-section,
-.title-nav,
-.parragraph-section,
-.form-text {
-  font-family: "Source Sans Pro", sans-serif;
-}
-
-.title-stack,
-.title-form {
-  font-family: "Pattaya", sans-serif;
-}
-
-/* .title-project {
-  font-family: "Playfair Display", serif;
-} */
-
 ::-webkit-scrollbar {
   height: 10px;
   width: 10px;

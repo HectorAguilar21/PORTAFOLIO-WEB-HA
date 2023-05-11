@@ -18,7 +18,7 @@ export default function ContentModalReact({
         <div class="modal-content bg-white border-none px-10 pb-3 rounded-3xl">
           <div class="modal-body">
             <h1
-              class="modal-title title-stack text-indigo-800 text-5xl py-3 text-center capitalize"
+              class="modal-title font-Pattaya text-indigo-800 text-5xl py-3 text-center capitalize"
               id="exampleModalLabel"
             >
               {titleModal}
@@ -28,7 +28,7 @@ export default function ContentModalReact({
             </div>
             <button
               type="button"
-              class="btn title-buttons bg-red-500 text-white w-full hover:bg-red-600 uppercase text-xl"
+              class="btn font-SourceSansPro bg-red-500 text-white w-full hover:bg-red-600 uppercase text-xl"
               data-bs-dismiss="modal"
               onClick={() => setDataModal("")}
             >

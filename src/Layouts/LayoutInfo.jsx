@@ -84,7 +84,7 @@ export default function LayoutInfo() {
             <Socials />
           </div>
           <motion.a
-            className={`absolute bg-white sT:top-[10px] sMINI:top-[5px] left-0 uppercase font-bold title-buttons sT:text-xl sMINI:text-base px-3 sTMINI:py-1 sMINI:py-[2px] rounded-tr-3xl rounded-br-3xl z-10 flex gap-2 items-center ${
+            className={`absolute bg-white sT:top-[10px] sMINI:top-[5px] left-0 uppercase font-bold font-SourceSansPro sT:text-xl sMINI:text-base px-3 sTMINI:py-1 sMINI:py-[2px] rounded-tr-3xl rounded-br-3xl z-10 flex gap-2 items-center shadow-2xl shadow-black ${
               pathName === "/page/projects" && "sMINI:top-[55px]"
             }`}
             href="../../../assets/pdf/CV Hector Aguilar.pdf"

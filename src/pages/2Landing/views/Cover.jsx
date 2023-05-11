@@ -32,11 +32,11 @@ export default function Cover() {
   };
 
   return (
-    <div className="cover sHD:h-11/12 sMINI:h-11/12 w-5/6 m-auto flex max-sHD:flex-col">
+    <div className="cover sHD:h-[91%] sMINI:h-[91%] w-5/6 m-auto flex max-sHD:flex-col">
       <div className="flex items-center sHD:h-full sHD:w-2/3 max-sHD:justify-center sMINI:h-1/3">
         <div className="text-white font-extrabold text-center sFHD:text-9xl sHD:text-8xl sTPRO:text-8xl sT:text-7xl sTMINI:text-6xl sCXSmax:text-5xl sCS:text-4xl sMINI:text-3xl backdrop-filter backdrop-blur-lg bg-cyan-600 bg-opacity-30  rounded-3xl sHD:w-11/12 sFHD:p-5 sHD:p-2">
           <motion.h1
-            className="title-name"
+            className="font-SofiaSansCondensed"
             initial={{ opacity: 0 }}
             transition={{ ease: "easeIn", duration: 2, delay: 1.5 }}
             animate={{ opacity: 1, x: 0 }}
@@ -72,7 +72,7 @@ export default function Cover() {
       <div className=" sHD:w-1/3 max-sHD:flex sHD:justify-center sMINI:flex-col sTMINI:flex-row sHD:flex-col my-auto sHD:h-full sMINI:h-2/3 max-sTMINI:items-center">
         <div className="max-sHD:my-3 sHD:my-auto sHD:h-2/3 max-sHD:w-4/6 max-sTMINI:w-4/6 flex">
           <motion.img
-            className="rounded-full shadow-2xl shadow-black my-auto mx-auto max-h-full bg-cyan-700 max-sHD:h-[500px] max-sTPROplus:h-[450px] max-sTPRO:h-[375px] max-sTMINI:h-[250px] max-sCXS:h-[200px] max-sCS:h-[150px]"
+            className="rounded-full shadow-2xl shadow-black my-auto mx-auto max-h-[100%] bg-cyan-700 max-sHD:h-[500px] max-sTPROplus:h-[450px] max-sTPRO:h-[375px] max-sTMINI:h-[250px] max-sCXS:h-[200px] max-sCS:h-[150px]"
             src={FotoPerfil}
             alt="Foto de perfil"
             initial={{ opacity: 0 }}
@@ -81,7 +81,7 @@ export default function Cover() {
           />
         </div>
         <div className="sHD:h-1/3 flex items-center justify-center max-sHD:w-2/6 max-sTMINI:w-full">
-          <div className="sHD:max-w-450 max-sHD:w-2/3 max-sTMINI:w-5/6 max-h-full HD:pt-7 max-sTMINI:pt-8 max-sCXS:pt-4 max-sCS:pt-0 sHD:grid sHD:grid-cols-2 max-sHD:flex max-sHD:flex-col max-sHD:justify-evenly max-sTMINI:grid max-sTMINI:grid-cols-2 gap-4 pt-2">
+          <div className="sHD:max-w-[450px] max-sHD:w-2/3 max-sTMINI:w-5/6 max-h-[100%] HD:pt-7 max-sTMINI:pt-8 max-sCXS:pt-4 max-sCS:pt-0 sHD:grid sHD:grid-cols-2 max-sHD:flex max-sHD:flex-col max-sHD:justify-evenly max-sTMINI:grid max-sTMINI:grid-cols-2 gap-4 pt-2">
             {ButtonList.map((item, index) => (
               <motion.div
                 className="flex justify-center items-center"

@@ -27,7 +27,10 @@ export default function Filter({ selectedTech, setSelectedTech }) {
       variants={variants}
     >
       <div className="bg-white py-2 sCS:px-10 sMINI:px-3 rounded-full shadow-md shadow-slate-800">
-        <label className="title-nav sFHD:text-xl sHD:text-base" htmlFor="tech">
+        <label
+          className="font-SourceSansPro sFHD:text-xl sHD:text-base"
+          htmlFor="tech"
+        >
           Filtrar por tecnologia:
         </label>
         <select

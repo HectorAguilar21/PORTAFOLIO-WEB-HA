@@ -93,7 +93,7 @@ export default function CrmHospitalPage() {
       ) : (
         <>
           <motion.h1
-            className="title-project text-center font-light text-amber-400 sFHD:text-5xl sHD:text-3xl sTPRO:text-4xl sTMINI:text-3xl sCXS:text-2xl sMINI:text-xl pt-4"
+            className="font-Alkatra text-center font-light text-amber-400 sFHD:text-5xl sHD:text-3xl sTPRO:text-4xl sTMINI:text-3xl sCXS:text-2xl sMINI:text-xl pt-4"
             initial="hidden"
             animate="visible"
             custom={{ delay: 0.5, duration: 0.75 }}
@@ -113,7 +113,7 @@ export default function CrmHospitalPage() {
                 variants={variants}
               />
               <motion.div
-                className="title-buttons sHD:w-5/6 sTMINI:w-4/6 flex flex-wrap gap-y-2 gap-x-1 justify-evenly text-slate-100  uppercase font-semibold sFHD:py-10 sTMINI:py-5 sFHD:text-2xl sHD:text-lg max-sTMINI:pb-5 max-sTMINI:pt-5 sHD:mr-5 max-sHD:m-auto"
+                className="font-SourceSansPro sHD:w-5/6 sTMINI:w-4/6 flex flex-wrap gap-y-2 gap-x-1 justify-evenly text-slate-100  uppercase font-semibold sFHD:py-10 sTMINI:py-5 sFHD:text-2xl sHD:text-lg max-sTMINI:pb-5 max-sTMINI:pt-5 sHD:mr-5 max-sHD:m-auto"
                 initial="hidden"
                 animate="visible"
                 custom={{ delay: 1.75 }}
@@ -138,7 +138,7 @@ export default function CrmHospitalPage() {
             </div>
             <div className="sHD:w-1/2 overflow-hidden">
               <motion.p
-                className="description-section sHD:w-5/6 sHD:ml-5 text-center sFHD:text-2xl sHD:text-base sTPRO:text-base sTMINI:text-sm sMINI:text-xs text-zinc-300 font-medium max-sHD:m-auto max-sHD:pt-10"
+                className="font-SofiaSansCondensed sHD:w-5/6 sHD:ml-5 text-center sFHD:text-2xl sHD:text-base sTPRO:text-base sMINI:text-sm text-zinc-300 font-medium max-sHD:m-auto max-sHD:pt-10"
                 initial="slide"
                 animate="slideComplete"
                 custom={{ delay: 1.25, duration: 1.25 }}
@@ -158,13 +158,13 @@ export default function CrmHospitalPage() {
             </div>
           </section>
           <motion.div
-            className="w-full flex"
+            className="w-full flex flex-wrap justify-evenly"
             initial="hidden"
             animate="visible"
             custom={{ delay: 1.5, duration: 1.5 }}
             variants={variants}
           >
-            <div className="w-1/3 flex flex-col items-center">
+            <div className="w-[200px] flex flex-col items-center">
               <div className="m-auto sTMINI:w-28 pointer-events-none sCXS:w-20 sMINI:w-12">
                 <Lottie
                   options={{ animationData: scrollAnimation, ...scrollOptions }}
@@ -178,7 +178,7 @@ export default function CrmHospitalPage() {
                 Administradores
               </button>
             </div>
-            <div className="w-1/3 flex flex-col items-center">
+            <div className="w-[200px] flex flex-col items-center">
               <div className="m-auto sTMINI:w-28 pointer-events-none sCXS:w-20 sMINI:w-12">
                 <Lottie
                   options={{ animationData: scrollAnimation, ...scrollOptions }}
@@ -192,7 +192,7 @@ export default function CrmHospitalPage() {
                 Secretarias
               </button>
             </div>
-            <div className="w-1/3 flex flex-col items-center">
+            <div className="w-[200px] flex flex-col items-center">
               <div className="m-auto sTMINI:w-28 pointer-events-none sCXS:w-20 sMINI:w-12">
                 <Lottie
                   options={{ animationData: scrollAnimation, ...scrollOptions }}

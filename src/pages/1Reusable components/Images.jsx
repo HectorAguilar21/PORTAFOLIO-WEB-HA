@@ -65,7 +65,7 @@ export default function Images({ item, pathName, tech }) {
           onMouseOut={() => setHovered(false)}
         />
         {pathStatus ? (
-          <p className="title-technology text-center font-semibold capitalize mx-auto sTPRO:text-xl sCXSmax:text-lg sMINI:text-base ">
+          <p className="font-SourceSansPro text-center font-semibold capitalize mx-auto sTPRO:text-xl sCXSmax:text-lg sMINI:text-base ">
             {item.title}
           </p>
         ) : null}

@@ -42,7 +42,7 @@ export default function LandingPage() {
         <>
           <Cover />
           <motion.a
-            className="absolute bg-white sT:top-[25px] sMINI:top-[5px] left-0 uppercase font-bold title-buttons sT:text-2xl sCS:text-base sMINI:text-sm sCS:px-3 sMINI:px-1 sCS:py-1 sMINI:py-[2px] rounded-tr-3xl rounded-br-3xl"
+            className="absolute bg-white sT:top-[25px] sMINI:top-[5px] left-0 uppercase font-bold font-SourceSansPro sT:text-2xl sCS:text-base sMINI:text-sm sCS:px-3 sMINI:px-1 sCS:py-1 sMINI:py-[2px] rounded-tr-3xl rounded-br-3xl shadow-2xl shadow-black"
             href="../../../assets/pdf/CV Hector Aguilar.pdf"
             initial="hidden"
             animate="visible"

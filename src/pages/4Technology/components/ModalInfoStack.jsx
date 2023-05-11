@@ -13,17 +13,17 @@ export default function ModalInfoStack({ children, infoModal, titleModal }) {
         <div class="modal-content bg-white border-none pb-3 rounded-3xl">
           <div class="modal-body sTMINI:px-[60px] sMINI:px-[30px]">
             <h1
-              class="modal-title title-stack text-indigo-800 text-5xl py-3"
+              class="modal-title font-Pattaya text-indigo-800 text-5xl py-3"
               id="exampleModalLabel"
             >
               {titleModal}
             </h1>
-            <div className="text-black pb-10 parragraph-section sFHD:text-2xl sTPRO:text-xl sTMINI:text-lg sCXS:text-base sMINI:text-sm sHD:text-justify sMINI:text-center">
+            <div className="text-black pb-10 font-SourceSansPro sFHD:text-2xl sTPRO:text-xl sTMINI:text-lg sCXS:text-base sMINI:text-sm sHD:text-justify sMINI:text-center">
               {children}
             </div>
             <button
               type="button"
-              class="btn title-buttons bg-red-500 text-white w-full hover:bg-red-600 uppercase text-xl"
+              class="btn font-SourceSansPro bg-red-500 text-white w-full hover:bg-red-600 uppercase text-xl"
               data-bs-dismiss="modal"
             >
               Cerrar

@@ -3,7 +3,7 @@ import React from "react";
 export default function Carousel({ images, carouselNumber }) {
   return (
     <>
-      <h1 className="text-center text-3xl text-white title-project">
+      <h1 className="text-center text-3xl text-white font-Alkatra">
         {images.title}
       </h1>
       <div

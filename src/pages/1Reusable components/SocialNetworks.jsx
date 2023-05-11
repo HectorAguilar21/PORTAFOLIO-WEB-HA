@@ -38,7 +38,7 @@ export default function SocialNetworks() {
             alt={item.title}
             title={item.title}
           />
-          <h5 className="parragraph-section text-slate-200 sTMINI:pl-3 sMINI:pl-1 sFHD:text-3xl sHDplus:text-2xl sHD:text-xl sTPRO:text-2xl sTMINI:text-xl sCXS:text-bas sCS:text-sm sMINI:text-xs">
+          <h5 className="font-SourceSansPro text-slate-200 sTMINI:pl-3 sMINI:pl-1 sFHD:text-3xl sHDplus:text-2xl sHD:text-xl sTPRO:text-2xl sTMINI:text-xl sCXS:text-bas sCS:text-sm sMINI:text-xs">
             {item.name}
           </h5>
         </motion.a>

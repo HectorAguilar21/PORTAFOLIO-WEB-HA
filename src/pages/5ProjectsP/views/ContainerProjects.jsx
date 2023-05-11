@@ -90,7 +90,7 @@ export default function ContainerProjects({ project }) {
   return (
     <div className={`my-auto w-full`}>
       <motion.h1
-        className="title-project text-center text-white capitalize sFHD:text-6xl sHD:text-4xl sTPRO:text-6xl sTMINI:text-4xl sCXS:text-2xl sMINI:text-xl sFHD:pb-10 pb-2"
+        className="font-Alkatra text-center text-white capitalize sFHD:text-6xl sHD:text-4xl sTPRO:text-6xl sTMINI:text-4xl sCXS:text-2xl sMINI:text-xl sFHD:pb-10 pb-2"
         initial="opacityTwo"
         whileInView="opacityTwoComplete"
         custom={{ delay: 0 }}
@@ -110,9 +110,9 @@ export default function ContainerProjects({ project }) {
             project.id % 2 === 0 ? "justify-end" : "justify-start"
           }`}
         >
-          <div className="sFHD:w-3/4 sHD:w-10/12 sFHD:min-h-475 flex items-center overflow-hidden">
+          <div className="sFHD:w-3/4 sHD:w-10/12 sFHD:min-h-[465px] flex items-center overflow-hidden">
             <motion.img
-              className="sFHD:min-w-360 sHD:max-h-475 sHD:max-w-720 my-auto"
+              className="sFHD:min-w-[360px] sHD:max-h-[465px] sHD:max-w-720 my-auto"
               initial={`${windowWidth < 1280 ? "opacityY" : "opacity"}`}
               whileInView={`${
                 windowWidth < 1280 ? "opacityYComplete" : "opacityComplete"

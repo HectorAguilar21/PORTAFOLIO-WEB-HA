@@ -24,13 +24,13 @@ export default function ProjectDescription({ project }) {
 
   return (
     <motion.div
-      className={`sFHD:min-h-475 rounded-3xl transition-all ease-in-out duration-100 bg-opacity-100 text-white ${
+      className={`sFHD:min-h-[465px] rounded-3xl transition-all ease-in-out duration-100 bg-opacity-100 text-white ${
         //Recordar cambia el !== por el ===
         project.id % 2 === 0 ? "bg-indigo-600" : "bg-cyan-600"
       } `}
     >
       <motion.p
-        className="parragraph-section text-center rounded-3xl pt-3 sFHD:px-20 sTMINI:px-5 sMINI:px-3 sFHD:text-xl sHD:text-base sTPRO:text-lg sMINI:text-xs"
+        className="font-SourceSansPro text-center rounded-3xl pt-3 sFHD:px-20 sTMINI:px-5 sMINI:px-3 sFHD:text-xl sHD:text-base sTPRO:text-lg sMINI:text-xs"
         initial="opacityTwo"
         animate="opacityTwoComplete"
         custom={{ delay: 1.75 }}
@@ -45,7 +45,7 @@ export default function ProjectDescription({ project }) {
         <TechBackendProject project={project} pathName={pathName} />
       )}
       <motion.div
-        className="title-buttons flex flex-wrap gap-y-2 gap-x-1 justify-evenly text-slate-100  uppercase font-semibold sFHD:py-10 sTMINI:py-5 sFHD:text-2xl sHD:text-lg max-sTMINI:pb-5 max-sTMINI:pt-5"
+        className="font-SourceSansPro flex flex-wrap gap-y-2 gap-x-1 justify-evenly text-slate-100  uppercase font-semibold sFHD:py-10 sTMINI:py-5 sFHD:text-2xl sHD:text-lg max-sTMINI:pb-5 max-sTMINI:pt-5"
         initial="opacityTwo"
         animate="opacityTwoComplete"
         custom={{ delay: 2.5 }}

@@ -6,7 +6,7 @@ export default function Card({ image, setOptionSelected }) {
     setOptionSelected(image);
   };
   return (
-    <div className="w-[500px] ">
+    <div className="sHD:w-[500px] sTPRO:w-[350px]">
       <motion.img
         className="shadow-2xl shadow-black rounded-md border-cyan-500 border-2 hover:border-indigo-500 transition-colors duration-200 ease-in-out cursor-pointer"
         src={image.image.image}

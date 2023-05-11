@@ -28,7 +28,7 @@ export default function ContentFrontend() {
     <div className="sTMINI:min-w-[525px] sHD:w-1/2 sMINI:w-full sFHD:min-h-[400px] sHDplus:min-h-[300px] sHD:min-h-[275px] sMINI:min-h-[400px] pt-[55px] px-3">
       <div className="bg-zinc-200 h-full w-full rounded-3xl relative">
         <div className="absolute left-1/2 transform -translate-x-1/2 sTMINI:-top-10 sMINI:-top-6">
-          <h1 className="title-stack text-center font-bold  text-indigo-800 bg-zinc-200 rounded-3xl sCS:py-3 sCS:px-5 sMINI:py-2 sMINI:px-2 sFHD:text-5xl sHD:text-4xl sTPRO:text-5xl sTMINI:text-3xl sMINI:text-xl">
+          <h1 className="font-Pattaya text-center font-bold  text-indigo-800 bg-zinc-200 rounded-3xl sCS:py-3 sCS:px-5 sMINI:py-2 sMINI:px-2 sFHD:text-5xl sHD:text-4xl sTPRO:text-5xl sTMINI:text-3xl sMINI:text-xl">
             Front-end
           </h1>
         </div>
@@ -49,7 +49,7 @@ export default function ContentFrontend() {
         </div>
         <div className="absolute bottom-0 bg-indigo-700 hover:bg-indigo-800 hover:cursor-pointer transition-all ease-in-out duration-500 w-full rounded-b-2xl text-white text-center text-xl py-2">
           <button
-            className="title-buttons w-full"
+            className="font-SourceSansPro w-full"
             type="button"
             data-bs-toggle="modal"
             data-bs-target={`#${dataModal}`}

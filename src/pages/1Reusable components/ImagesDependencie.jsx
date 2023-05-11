@@ -14,7 +14,7 @@ export default function ImagesDependencie({ item }) {
         onMouseOver={() => setHovered(true)}
         onMouseOut={() => setHovered(false)}
       />
-      <p className="title-technology text-center font-semibold capitalize sTMINI:text-xl sCS:text-sm sMINI:text-xs ">
+      <p className="font-SourceSansPro text-center font-semibold capitalize sTMINI:text-xl sCS:text-sm sMINI:text-xs ">
         {item.title}
       </p>
     </>

@@ -62,14 +62,14 @@ export default function FormContact() {
           variants={variants}
         >
           <label
-            className="parragraph-section block text-white sTMINI:text-2xl sCXS:text-xl sCS:text-lg"
+            className="font-SourceSansPro block text-white sTMINI:text-2xl sCXS:text-xl sCS:text-lg"
             htmlFor="username"
           >
             Name
           </label>
           <input
             id="username"
-            className="parragraph-section bg-transparent border-b-2 rounded-md w-full border-cyan-500 p-2 sTMINI:text-xl sCXS:text-lg sCS:text-base"
+            className="font-SourceSansPro bg-transparent border-b-2 rounded-md w-full border-cyan-500 p-2 sTMINI:text-xl sCXS:text-lg sCS:text-base"
             type="text"
             name="username"
             placeholder="Example: Juan Aguilar"
@@ -86,14 +86,14 @@ export default function FormContact() {
           variants={variants}
         >
           <label
-            className="parragraph-section block text-white sTMINI:text-2xl sCXS:text-xl sCS:text-lg"
+            className="font-SourceSansPro block text-white sTMINI:text-2xl sCXS:text-xl sCS:text-lg"
             htmlFor="email"
           >
             Email address
           </label>
           <input
             id="email"
-            className="parragraph-section bg-transparent border-b-2 rounded-md w-full border-cyan-500 p-2 sTMINI:text-xl sCXS:text-lg sCS:text-base"
+            className="font-SourceSansPro bg-transparent border-b-2 rounded-md w-full border-cyan-500 p-2 sTMINI:text-xl sCXS:text-lg sCS:text-base"
             type="email"
             name="email"
             placeholder="name@example.com"
@@ -110,14 +110,14 @@ export default function FormContact() {
           variants={variants}
         >
           <label
-            className="parragraph-section block text-white sTMINI:text-2xl sCXS:text-xl sCS:text-lg"
+            className="font-SourceSansPro block text-white sTMINI:text-2xl sCXS:text-xl sCS:text-lg"
             htmlFor="message"
           >
             Message
           </label>
           <textarea
             id="message"
-            className="parragraph-section bg-transparent border-2 rounded-md w-full border-cyan-500 p-2 sTMINI:text-xl sCXS:text-lg sCS:text-base"
+            className="font-SourceSansPro bg-transparent border-2 rounded-md w-full border-cyan-500 p-2 sTMINI:text-xl sCXS:text-lg sCS:text-base"
             name="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}

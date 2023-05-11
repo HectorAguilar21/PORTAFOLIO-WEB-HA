@@ -83,7 +83,7 @@ export default function Socials() {
         ))}
       </motion.ul>
       <motion.button
-        className="m-auto flex flex-col justify-center items-center w-22 sHD:h-22 font-bold rounded-full sTMINI:text-base sMINI:text-xs "
+        className="m-auto flex flex-col justify-center items-center w-[90px] sHD:h-[90px] font-bold rounded-full sTMINI:text-base sMINI:text-xs "
         whileTap={{ scale: 0.75 }}
         onClick={() => setIsOpen(!isOpen)}
       >

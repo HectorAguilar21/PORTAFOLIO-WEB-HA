@@ -86,7 +86,7 @@ export default function ContainerContact() {
   return (
     <motion.div className="my-auto w-full">
       <motion.h1
-        className="title-section font-bold text-amber-400 text-center sHD:text-8xl sTPRO:text-7xl sTMINI:text-6xl sCXS:text-4xl sCS:text-3xl sMINI:text-xl sCXS:pb-3 sCS:pb-1"
+        className="font-SourceSansPro font-bold text-amber-400 text-center sHD:text-8xl sTPRO:text-7xl sTMINI:text-6xl sCXS:text-4xl sCS:text-3xl sMINI:text-xl sCXS:pb-3 sCS:pb-1"
         initial="opacity"
         animate="opacityComplete"
         custom={{ delay: 4.25 }}
@@ -103,7 +103,7 @@ export default function ContainerContact() {
             custom={{ delay: 2 }}
             variants={variants}
           >
-            <div className="h-full w-full sTMINI:min-w-360 sCS:min-w-288 sHD:min-h-475 sTMINI:min-h-350 bg-cyan-700 overflow-hidden">
+            <div className="h-full w-full sTMINI:min-w-[360px] sCS:min-w-[288px] sHD:min-h-[465px] sTMINI:min-h-[350px] bg-cyan-700 overflow-hidden">
               <SocialNetworks />
             </div>
           </motion.div>
@@ -134,7 +134,7 @@ export default function ContainerContact() {
             custom={{ delay: 0 }}
             variants={variants}
           >
-            <div className="h-full w-full sTMINI:min-w-360 sCS:min-w-288 sTMINI:min-h-475 sCXS:min-h-400 sCS:min-h-350 sMINI:min-h-340 shadow-2xl shadow-black backdrop-filter backdrop-blur-lg hover:bg-white hover:bg-opacity-10 transition-all sCXS:p-8 max-sCXS:py-2 max-sCXS:px-4">
+            <div className="h-full w-full sTMINI:min-w-[360px] sCS:min-w-[288px] sTMINI:min-h-[465px] sCXS:min-h-[400px] sCS:min-h-[350px] sMINI:min-h-[340px] shadow-2xl shadow-black backdrop-filter backdrop-blur-lg hover:bg-white hover:bg-opacity-10 transition-all sCXS:p-8 max-sCXS:py-2 max-sCXS:px-4">
               <FormContact />
             </div>
           </motion.div>
