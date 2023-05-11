@@ -120,7 +120,7 @@ export default function ContainerProjects({ project }) {
               custom={{ delay: 0 }}
               viewport={{ once: true, amount: 0.01 }}
               variants={variants}
-              src={project.images}
+              src={project.imagesMockup}
               alt={project.title}
               title={project.title}
             />

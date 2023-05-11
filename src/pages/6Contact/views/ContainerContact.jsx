@@ -103,7 +103,9 @@ export default function ContainerContact() {
             custom={{ delay: 2 }}
             variants={variants}
           >
-            <SocialNetworks />
+            <div className="h-full w-full sTMINI:min-w-360 sCS:min-w-288 sHD:min-h-475 sTMINI:min-h-350 bg-cyan-700 overflow-hidden">
+              <SocialNetworks />
+            </div>
           </motion.div>
         </div>
         <motion.div
@@ -132,7 +134,9 @@ export default function ContainerContact() {
             custom={{ delay: 0 }}
             variants={variants}
           >
-            <FormContact />
+            <div className="h-full w-full sTMINI:min-w-360 sCS:min-w-288 sTMINI:min-h-475 sCXS:min-h-400 sCS:min-h-350 sMINI:min-h-340 shadow-2xl shadow-black backdrop-filter backdrop-blur-lg hover:bg-white hover:bg-opacity-10 transition-all sCXS:p-8 max-sCXS:py-2 max-sCXS:px-4">
+              <FormContact />
+            </div>
           </motion.div>
         </motion.div>
       </div>

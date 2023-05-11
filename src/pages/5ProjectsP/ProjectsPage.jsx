@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Lottie from "react-lottie";
+import { easeInOut, motion } from "framer-motion";
 import Filter from "./components/Filter";
 import ContainerProjects from "./views/ContainerProjects";
 import { Projects } from "../data/Data";
@@ -19,8 +20,23 @@ export default function ProjectsPage() {
     },
   };
 
+  const variants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: ({ delay, duration }) => ({
+      opacity: 1,
+      transition: {
+        type: "spring",
+        delay,
+        ease: easeInOut,
+        duration,
+      },
+    }),
+  };
+
   return (
-    <div className="project-page w-screen h-screen relative overflow-auto">
+    <div className="project-page w-screen h-screen relative overflow-auto ">
       <Filter selectedTech={selectedTech} setSelectedTech={setSelectedTech} />
       {Projects.filter((project) =>
         selectedTech
@@ -30,16 +46,20 @@ export default function ProjectsPage() {
       )
         .sort((a, b) => b.id - a.id)
         .map((project, index) => (
-          <div
+          <motion.div
             className={`w-full h-full flex items-center bg-cover bg-no-repeat`}
             style={{
               backgroundImage: `url(${
-                project.id % 2 !== 0 ? BgMeteorIndigo : BgMeteorCyan
+                project.id % 2 == 0 ? BgMeteorIndigo : BgMeteorCyan
               })`,
             }}
+            initial="hidden"
+            animate="visible"
+            custom={{ delay: 0, duration: 0.75 }}
+            variants={variants}
           >
             <ContainerProjects project={project} key={index} />
-          </div>
+          </motion.div>
         ))}
 
       <div className="fixed-bottom bottom-3 sTMINI:w-28 left-1/2 -translate-x-1/2 pointer-events-none sCXS:w-20 sMINI:w-12">

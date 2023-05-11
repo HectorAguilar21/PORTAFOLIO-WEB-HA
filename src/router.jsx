@@ -8,8 +8,8 @@ import ContactPage from "./pages/6Contact/ContactPage";
 import LayoutInfo from "./Layouts/LayoutInfo";
 import LayoutProjects from "./Layouts/LayoutProjects";
 import PresupuestoAppPage from "./pages/5ProjectsP/Pages/PresupuestoAppPage";
-import CrmHospitalPage from "./pages/5ProjectsP/Pages/CrmHospitalPage";
-import CrmPacientePage from "./pages/5ProjectsP/Pages/CrmPacientePage";
+import CrmHospitalPage from "./pages/5ProjectsP/Pages/CrmHospitalPage/CrmHospitalPageIndex";
+import CrmPacientePage from "./pages/5ProjectsP/Pages/CrmPacientePage/CrmPacientePageIndex";
 
 const router = createHashRouter([
   {

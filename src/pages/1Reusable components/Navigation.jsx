@@ -4,15 +4,6 @@ import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { DirectionList } from "../data/Data";
 
-const itemVariants = {
-  open: {
-    opacity: 1,
-    y: 0,
-    transition: { type: "spring", stiffness: 300, damping: 24 },
-  },
-  closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
-};
-
 export default function Navigation() {
   const location = useLocation();
   const pathName = location.pathname;
@@ -39,6 +30,15 @@ export default function Navigation() {
     default:
       break;
   }
+
+  const itemVariants = {
+    open: {
+      opacity: 1,
+      y: 0,
+      transition: { type: "spring", stiffness: 300, damping: 24 },
+    },
+    closed: { opacity: 0, y: 20, transition: { duration: 0.2 } },
+  };
 
   const [isOpen, setIsOpen] = useState(false);
 

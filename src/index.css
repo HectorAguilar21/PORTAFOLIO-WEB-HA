@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 .title-name,
-.title-container {
+.title-container,
+.description-section {
   font-family: "Sofia Sans Condensed", sans-serif;
 }
 

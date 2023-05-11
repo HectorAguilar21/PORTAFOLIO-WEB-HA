@@ -52,7 +52,7 @@ export default function FormContact() {
   };
 
   return (
-    <div className="h-full w-full sTMINI:min-w-360 sCS:min-w-288 sTMINI:min-h-475 sCXS:min-h-400 sCS:min-h-350 sMINI:min-h-340 shadow-2xl shadow-black backdrop-filter backdrop-blur-lg hover:bg-white hover:bg-opacity-10 transition-all sCXS:p-8 max-sCXS:py-2 max-sCXS:px-4 flex flex-col justify-center">
+    <div className="h-full w-full flex flex-col justify-center">
       <form ref={refForm} onSubmit={handleSubmit}>
         <motion.div
           className="sTMINI:py-3 sCXS:py-2 sCS:py-1 "

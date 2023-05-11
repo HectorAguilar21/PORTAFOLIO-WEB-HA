@@ -13,11 +13,11 @@ export default function ContainerInformation() {
 
   function Content(selectedTab) {
     switch (selectedTab) {
-      case "Professional":
+      case "Profesional":
         return <ContentProfessional />;
-      case "Studies":
+      case "Estudios":
         return <ContentStudies />;
-      case "Hobbies":
+      case "Hobby":
         return <ContentHobbies />;
       case "Personal":
         return <ContentPersonal />;
