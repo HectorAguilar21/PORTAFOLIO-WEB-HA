@@ -26,11 +26,11 @@ export default function ContentPersonal() {
           cuatro pilares fundamentales en mi vida: mi hijo, quien me ha enseñado
           que el amor es lo más importante y me ha convertido en un estudiante
           dedicado; mi pareja, con quien he aprendido la importancia de la
-          comunicación y la paciencia en una relación; mi madre, quien ha sido
-          mi guía y apoyo en los momentos más difíciles, enseñándome el valor
-          del trabajo duro, la honestidad y la perseverancia; y mi fe en Dios,
-          quien me da la fuerza y la motivación para superar los obstáculos y
-          hacer una diferencia positiva en el mundo.
+          comunicación y la paciencia en una relación; mis padres, quienes han
+          sido mi guía y apoyo en los momentos más difíciles, enseñándome el
+          valor del trabajo duro, la honestidad y la perseverancia; y mi fe en
+          Dios, quien me da la fuerza y la motivación para superar los
+          obstáculos y hacer una diferencia positiva en el mundo.
         </motion.p>
       </div>
     </motion.div>
